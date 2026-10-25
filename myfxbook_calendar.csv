@@ -1,10 +1,10 @@
 Section Date,Event Time,Time Left,Currency,Event Name,Impact,Previous,Consensus,Actual,Source
-"Monday, Oct 26, 2026","Oct 26, 05:10",8h 9min,AUD,RBA Jones Speech,MEDIUM,,,,MyFXBook
-"Monday, Oct 26, 2026","Oct 26, 08:00",10h 59min,EUR,National Day,NONE,,,,MyFXBook
-"Monday, Oct 26, 2026","Oct 26, 08:00",10h 59min,EUR,October Bank Holiday,NONE,,,,MyFXBook
-"Monday, Oct 26, 2026","Oct 26, 08:00",10h 59min,NZD,Labor Day,NONE,,,,MyFXBook
-"Monday, Oct 26, 2026","Oct 26, 17:00",19h 59min,EUR,Ifo Business Climate (Oct),HIGH,89.9,89.8,,MyFXBook
-"Monday, Oct 26, 2026","Oct 26, 20:30",23h 29min,USD,Chicago Fed National Activity Index (Sep),MEDIUM,-0.04,-0.1,,MyFXBook
+"Monday, Oct 26, 2026","Oct 26, 05:10",7h 54min,AUD,RBA Jones Speech,MEDIUM,,,,MyFXBook
+"Monday, Oct 26, 2026","Oct 26, 08:00",10h 44min,EUR,National Day,NONE,,,,MyFXBook
+"Monday, Oct 26, 2026","Oct 26, 08:00",10h 44min,EUR,October Bank Holiday,NONE,,,,MyFXBook
+"Monday, Oct 26, 2026","Oct 26, 08:00",10h 44min,NZD,Labor Day,NONE,,,,MyFXBook
+"Monday, Oct 26, 2026","Oct 26, 17:00",19h 44min,EUR,Ifo Business Climate (Oct),HIGH,89.9,89.8,,MyFXBook
+"Monday, Oct 26, 2026","Oct 26, 20:30",23h 14min,USD,Chicago Fed National Activity Index (Sep),MEDIUM,-0.04,-0.1,,MyFXBook
 "Monday, Oct 26, 2026","Oct 26, 22:30",1 day,USD,Dallas Fed Manufacturing Index (Oct),MEDIUM,9.8,7,,MyFXBook
 "Tuesday, Oct 27, 2026","Oct 27, 16:00",1 day,EUR,Unemployment Rate (Q3),HIGH,9.87%,10.1%,,MyFXBook
 "Tuesday, Oct 27, 2026","Oct 27, 20:15",1 day,USD,ADP Employment Change Weekly,HIGH,18.5K,,,MyFXBook
@@ -51,8 +51,8 @@ Section Date,Event Time,Time Left,Currency,Event Name,Impact,Previous,Consensus,
 "Thursday, Oct 29, 2026","Oct 29, 20:30",3 days,USD,Personal Spending MoM (Sep),HIGH,0.9%,0.3%,,MyFXBook
 "Thursday, Oct 29, 2026","Oct 29, 20:30",3 days,USD,Core PCE Price Index YoY (Sep),HIGH,3%,3.1%,,MyFXBook
 "Thursday, Oct 29, 2026","Oct 29, 20:30",3 days,USD,PCE Price Index MoM (Sep),MEDIUM,0.3%,0.5%,,MyFXBook
-"Thursday, Oct 29, 2026","Oct 29, 21:15",4 days,EUR,ECB Interest Rate Decision,HIGH,2.65%,2.65%,,MyFXBook
-"Thursday, Oct 29, 2026","Oct 29, 21:15",4 days,EUR,Deposit Facility Rate,HIGH,2.5%,2.5%,,MyFXBook
+"Thursday, Oct 29, 2026","Oct 29, 21:15",3 days,EUR,ECB Interest Rate Decision,HIGH,2.65%,2.65%,,MyFXBook
+"Thursday, Oct 29, 2026","Oct 29, 21:15",3 days,EUR,Deposit Facility Rate,HIGH,2.5%,2.5%,,MyFXBook
 "Thursday, Oct 29, 2026","Oct 29, 21:45",4 days,EUR,ECB Press Conference,HIGH,,,,MyFXBook
 "Thursday, Oct 29, 2026","Oct 29, 23:00",4 days,USD,Atlanta Fed GDPNow (Q4),MEDIUM,,,,MyFXBook
 "Friday, Oct 30, 2026","Oct 30, 01:30",4 days,CHF,SNB Tschudin Speech,MEDIUM,,,,MyFXBook
