@@ -1,7 +1,8 @@
 import time
 import re
+import os
 import subprocess
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 from zoneinfo import ZoneInfo
 import requests
 import pandas as pd
@@ -21,7 +22,6 @@ def filter_economic_calendar(df):
     if df.empty:
         return df
 
-    # Clean and prepare helper columns
     df['Event_Lower'] = df['Event Name'].astype(str).str.strip().str.lower()
     df['Impact_Upper'] = df['Impact'].astype(str).str.strip().str.upper()
     df['Currency_Upper'] = df['Currency'].astype(str).str.strip().str.upper()
@@ -36,7 +36,6 @@ def filter_economic_calendar(df):
 
     holiday_keywords = ['holiday', 'national day', 'labor day', 'bank holiday']
 
-    # Conditions
     cond_high = (df['Impact_Upper'] == 'HIGH') & (df['Currency_Upper'].isin(major_currencies))
     
     pattern_medium = '|'.join(tier1_medium_keywords)
@@ -45,10 +44,7 @@ def filter_economic_calendar(df):
     pattern_holiday = '|'.join(holiday_keywords)
     cond_holidays = (df['Impact_Upper'] == 'NONE') & df['Event_Lower'].str.contains(pattern_holiday, na=False)
 
-    # Combine precision conditions
     filtered_df = df[cond_high | cond_medium | cond_holidays].copy()
-
-    # Drop temporary helper columns
     filtered_df = filtered_df.drop(columns=['Event_Lower', 'Impact_Upper', 'Currency_Upper'])
     
     return filtered_df
@@ -96,7 +92,6 @@ def scrape_myfxbook():
     events = []
     with sync_playwright() as p:
         print("🌐 Launching fresh headless browser for MyFXBook...")
-        # Add arguments to avoid detection/blocking on repeated requests
         browser = p.chromium.launch(
             headless=True,
             args=[
@@ -115,11 +110,9 @@ def scrape_myfxbook():
         try:
             print("Navigating to MyFXBook Economic Calendar...")
             page.goto("https://www.myfxbook.com/forex-economic-calendar", timeout=60000, wait_until="domcontentloaded")
-            
-            # Give it a bit more time to let dynamic JS build the table rows safely on loop intervals
             print("Waiting for calendar table to render...")
             page.wait_for_selector("table", timeout=40000)
-            time.sleep(10) # Safe buffer for full data population
+            time.sleep(10)
 
             events = page.evaluate("""() => {
                 const rows = document.querySelectorAll('tr');
@@ -234,10 +227,16 @@ def fetch_forexfactory_json():
         return pd.DataFrame()
 
 def main():
+    check_count = 0
     while True:
         try:
+            check_count += 1
             output_filename = "myfxbook_calendar.csv"
-            print("🚀 Starting optimized multi-source calendar pipeline...")
+            
+            print(f"\n==================================================")
+            print(f"🚀 [Check #{check_count}] Starting multi-source calendar pipeline...")
+            print(f"🕒 Current Time: {datetime.now(MANILA_TZ).strftime('%b %d, %Y - %H:%M:%S')}")
+            print(f"==================================================")
             
             df_mfx = scrape_myfxbook()
             print(f"📊 MyFXBook events scraped: {len(df_mfx)}")
@@ -247,37 +246,58 @@ def main():
             combined_df = pd.concat([df_mfx, df_ff], ignore_index=True)
             
             if combined_df.empty:
-                print("⚠️ No events fetched from any source. Retrying in 15 minutes...")
-                time.sleep(900)
-                continue
+                print("⚠️ No events fetched from any source. Waiting for next interval...")
+            else:
+                combined_df = combined_df.drop_duplicates(subset=['Section Date', 'Currency', 'Event Name'], keep='first')
+                print(f"📊 Total unique events combined before filtering: {len(combined_df)}")
 
-            combined_df = combined_df.drop_duplicates(subset=['Section Date', 'Currency', 'Event Name'], keep='first')
-            print(f"📊 Total unique events combined before filtering: {len(combined_df)}")
+                df_filtered = filter_economic_calendar(combined_df)
 
-            df_filtered = filter_economic_calendar(combined_df)
+                print(f"✅ Successfully filtered down to {len(df_filtered)} relevant economic events!")
+                if not df_filtered.empty:
+                    print(df_filtered[['Section Date', 'Source', 'Currency', 'Event Name', 'Impact']].head(10).to_string())
 
-            print(f"✅ Successfully filtered down to {len(df_filtered)} relevant economic events!")
-            if not df_filtered.empty:
-                print(df_filtered[['Section Date', 'Source', 'Currency', 'Event Name', 'Impact']].head(15).to_string())
+                df_filtered.to_csv(output_filename, index=False)
+                print(f"📁 Clean filtered data successfully saved to {output_filename}")
 
-            df_filtered.to_csv(output_filename, index=False)
-            print(f"📁 Clean filtered data successfully saved to {output_filename}")
+                # --- AUTOMATED GIT SYNC ---
+                print("🔄 Pushing updated CSV to GitHub repository...")
+                try:
+                    subprocess.run(["git", "add", output_filename], check=True)
+                    status = subprocess.run(["git", "diff", "--staged", "--quiet"], capture_output=True)
+                    if status.returncode != 0:
+                        subprocess.run(["git", "commit", "-m", f"Auto-update calendar CSV (Check #{check_count}) [skip ci]"], check=True)
+                        subprocess.run(["git", "push"], check=True)
+                        print("🚀 Successfully committed and pushed to GitHub!")
+                    else:
+                        print("ℹ️ CSV data is already up to date. No git commit needed.")
+                except Exception as e:
+                    print(f"⚠️ Git automation error: {e}")
 
-            # --- AUTOMATED GIT SYNC ---
-            print("🔄 Pushing updated CSV to GitHub repository...")
-            try:
-                subprocess.run(["git", "add", output_filename], check=True)
-                status = subprocess.run(["git", "diff", "--staged", "--quiet"], capture_output=True)
-                if status.returncode != 0:
-                    subprocess.run(["git", "commit", "-m", "Auto-update calendar CSV [skip ci]"], check=True)
-                    subprocess.run(["git", "push"], check=True)
-                    print("🚀 Successfully committed and pushed to GitHub!")
-                else:
-                    print("ℹ️ CSV data is already up to date. No git commit needed.")
-            except Exception as e:
-                print(f"⚠️ Git automation error: {e}")
+            # Clear terminal screen every 3 checks to keep it clean
+            if check_count >= 3:
+                print("\n🧹 Reached 3 checks. Clearing terminal screen for a fresh view...")
+                time.sleep(3)
+                os.system('cls' if os.name == 'nt' else 'clear')
+                check_count = 0  # Reset counter
+
+            # Calculate exact wait time until the next 15-minute mark (:00, :15, :30, :45)
+            now = datetime.now(MANILA_TZ)
+            current_minute = now.minute
+            next_minute_block = ((current_minute // 15) + 1) * 15
+            
+            if next_minute_block >= 60:
+                # Roll over to the next hour
+                next_run = (now + timedelta(hours=1)).replace(minute=0, second=0, microsecond=0)
+            else:
+                next_run = now.replace(minute=next_minute_block, second=0, microsecond=0)
                 
-            time.sleep(900)
+            sleep_seconds = (next_run - now).total_seconds()
+            if sleep_seconds < 5:  # Safety fallback if it triggers right on the edge
+                sleep_seconds = 15
+                
+            print(f"\n⏳ Waiting until next scheduled mark ({next_run.strftime('%H:%M:%S')}) — sleeping for {int(sleep_seconds)} seconds...")
+            time.sleep(sleep_seconds)
             
         except Exception as e:
             print(f"⚠️ Critical loop error: {e}")
