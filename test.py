@@ -221,6 +221,14 @@ def fetch_forexfactory_json():
         return pd.DataFrame()
 
 def main():
+    try:
+        subprocess.run(["git", "config", "--global", "user.email", "your-email@example.com"], check=False)
+        subprocess.run(["git", "config", "--global", "user.name", "NMagneticR"], check=False)
+        # Replace YOUR_GITHUB_TOKEN with your actual classic Personal Access Token from GitHub
+        subprocess.run(["git", "remote", "set-url", "origin", "https://YOUR_GITHUB_TOKEN@github.com/NMagneticR/NMR-MFX.git"], check=False)
+    except Exception as e:
+        print(f"⚠️ Git config initialization note: {e}")
+
     while True:
         try:
             output_filename = "myfxbook_calendar.csv"

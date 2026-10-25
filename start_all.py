@@ -13,7 +13,7 @@ if __name__ == "__main__":
 
     try:
         while True:
-            # Monitor processes and restart them if they ever crash
+            # Monitor and restart if either script ever crashes
             if bot_process.poll() is not None:
                 print("⚠️ bot.py stopped. Restarting...")
                 bot_process = run_script("bot.py")
