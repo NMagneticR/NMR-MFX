@@ -1,9 +1,9 @@
 Section Date,Event Time,Time Left,Currency,Event Name,Impact,Previous,Consensus,Actual,Source
-"Monday, Oct 26, 2026","Oct 26, 05:10",12h 19min,AUD,RBA Jones Speech,MEDIUM,,,,MyFXBook
-"Monday, Oct 26, 2026","Oct 26, 08:00",15h 9min,EUR,National Day,NONE,,,,MyFXBook
-"Monday, Oct 26, 2026","Oct 26, 08:00",15h 9min,EUR,October Bank Holiday,NONE,,,,MyFXBook
-"Monday, Oct 26, 2026","Oct 26, 08:00",15h 9min,NZD,Labor Day,NONE,,,,MyFXBook
-"Monday, Oct 26, 2026","Oct 26, 17:00",1 day,EUR,Ifo Business Climate (Oct),HIGH,89.9,89.8,,MyFXBook
+"Monday, Oct 26, 2026","Oct 26, 05:10",12h 4min,AUD,RBA Jones Speech,MEDIUM,,,,MyFXBook
+"Monday, Oct 26, 2026","Oct 26, 08:00",14h 54min,EUR,National Day,NONE,,,,MyFXBook
+"Monday, Oct 26, 2026","Oct 26, 08:00",14h 54min,EUR,October Bank Holiday,NONE,,,,MyFXBook
+"Monday, Oct 26, 2026","Oct 26, 08:00",14h 54min,NZD,Labor Day,NONE,,,,MyFXBook
+"Monday, Oct 26, 2026","Oct 26, 17:00",23h 54min,EUR,Ifo Business Climate (Oct),HIGH,89.9,89.8,,MyFXBook
 "Monday, Oct 26, 2026","Oct 26, 20:30",1 day,USD,Chicago Fed National Activity Index (Sep),MEDIUM,-0.04,-0.1,,MyFXBook
 "Monday, Oct 26, 2026","Oct 26, 22:30",1 day,USD,Dallas Fed Manufacturing Index (Oct),MEDIUM,9.8,7,,MyFXBook
 "Tuesday, Oct 27, 2026","Oct 27, 16:00",1 day,EUR,Unemployment Rate (Q3),HIGH,9.87%,10.1%,,MyFXBook
@@ -38,7 +38,7 @@ Section Date,Event Time,Time Left,Currency,Event Name,Impact,Previous,Consensus,
 "Thursday, Oct 29, 2026","Oct 29, 02:00",3 days,USD,Fed Interest Rate Decision,HIGH,4%,4%,,MyFXBook
 "Thursday, Oct 29, 2026","Oct 29, 02:30",3 days,USD,Fed Press Conference,HIGH,,,,MyFXBook
 "Thursday, Oct 29, 2026","Oct 29, 13:00",3 days,JPY,Consumer Confidence (Oct),HIGH,35.4,35.1,,MyFXBook
-"Thursday, Oct 29, 2026","Oct 29, 17:00",4 days,EUR,Unemployment Rate (Sep),HIGH,6.2%,6.2%,,MyFXBook
+"Thursday, Oct 29, 2026","Oct 29, 17:00",3 days,EUR,Unemployment Rate (Sep),HIGH,6.2%,6.2%,,MyFXBook
 "Thursday, Oct 29, 2026","Oct 29, 17:30",4 days,GBP,BoE Consumer Credit (Sep),MEDIUM,£2.464B,£2.2B,,MyFXBook
 "Thursday, Oct 29, 2026","Oct 29, 20:30",4 days,USD,Jobless Claims 4-week Average (Oct/24),HIGH,197.75K,197K,,MyFXBook
 "Thursday, Oct 29, 2026","Oct 29, 20:30",4 days,USD,Continuing Jobless Claims (Oct/17),HIGH,1728K,1729K,,MyFXBook
@@ -64,20 +64,20 @@ Section Date,Event Time,Time Left,Currency,Event Name,Impact,Previous,Consensus,
 "Friday, Oct 30, 2026","Oct 30, 15:30",4 days,CHF,Retail Sales YoY (Sep),HIGH,3.2,1.4,,MyFXBook
 "Friday, Oct 30, 2026","Oct 30, 15:45",4 days,EUR,Inflation Rate YoY (Oct),HIGH,3.1%,3.2%,,MyFXBook
 "Friday, Oct 30, 2026","Oct 30, 15:45",4 days,EUR,Inflation Rate MoM (Oct),MEDIUM,-0.3%,0.3%,,MyFXBook
-"Friday, Oct 30, 2026","Oct 30, 16:55",5 days,EUR,Unemployment Rate (Oct),HIGH,6.4%,6.4%,,MyFXBook
-"Friday, Oct 30, 2026","Oct 30, 16:55",5 days,EUR,Unemployment Change (Oct),HIGH,12K,5K,,MyFXBook
-"Friday, Oct 30, 2026","Oct 30, 17:00",5 days,EUR,Brandenburg CPI YoY (Oct),HIGH,3.6,,,MyFXBook
-"Friday, Oct 30, 2026","Oct 30, 17:00",5 days,EUR,Saxony CPI MoM (Oct),HIGH,0.6%,,,MyFXBook
-"Friday, Oct 30, 2026","Oct 30, 17:00",5 days,EUR,Bavaria CPI YoY (Oct),HIGH,3.2,,,MyFXBook
-"Friday, Oct 30, 2026","Oct 30, 17:00",5 days,EUR,North Rhine Westphalia CPI MoM (Oct),HIGH,0.6%,,,MyFXBook
-"Friday, Oct 30, 2026","Oct 30, 17:00",5 days,EUR,Hesse CPI YoY (Oct),HIGH,3.4,,,MyFXBook
-"Friday, Oct 30, 2026","Oct 30, 17:00",5 days,EUR,Baden Wuerttemberg CPI MoM (Oct),HIGH,0.6%,,,MyFXBook
-"Friday, Oct 30, 2026","Oct 30, 17:00",5 days,EUR,Brandenburg CPI MoM (Oct),HIGH,0.3,,,MyFXBook
-"Friday, Oct 30, 2026","Oct 30, 17:00",5 days,EUR,Saxony CPI YoY (Oct),HIGH,3.4,,,MyFXBook
-"Friday, Oct 30, 2026","Oct 30, 17:00",5 days,EUR,Bavaria CPI MoM (Oct),HIGH,0.6%,,,MyFXBook
-"Friday, Oct 30, 2026","Oct 30, 17:00",5 days,EUR,Hesse CPI MoM (Oct),HIGH,0.5%,,,MyFXBook
-"Friday, Oct 30, 2026","Oct 30, 17:00",5 days,EUR,North Rhine Westphalia CPI YoY (Oct),HIGH,3.3,,,MyFXBook
-"Friday, Oct 30, 2026","Oct 30, 17:00",5 days,EUR,Baden Wuerttemberg CPI YoY (Oct),HIGH,2.9,,,MyFXBook
+"Friday, Oct 30, 2026","Oct 30, 16:55",4 days,EUR,Unemployment Rate (Oct),HIGH,6.4%,6.4%,,MyFXBook
+"Friday, Oct 30, 2026","Oct 30, 16:55",4 days,EUR,Unemployment Change (Oct),HIGH,12K,5K,,MyFXBook
+"Friday, Oct 30, 2026","Oct 30, 17:00",4 days,EUR,Brandenburg CPI YoY (Oct),HIGH,3.6,,,MyFXBook
+"Friday, Oct 30, 2026","Oct 30, 17:00",4 days,EUR,Saxony CPI MoM (Oct),HIGH,0.6%,,,MyFXBook
+"Friday, Oct 30, 2026","Oct 30, 17:00",4 days,EUR,Bavaria CPI YoY (Oct),HIGH,3.2,,,MyFXBook
+"Friday, Oct 30, 2026","Oct 30, 17:00",4 days,EUR,North Rhine Westphalia CPI MoM (Oct),HIGH,0.6%,,,MyFXBook
+"Friday, Oct 30, 2026","Oct 30, 17:00",4 days,EUR,Hesse CPI YoY (Oct),HIGH,3.4,,,MyFXBook
+"Friday, Oct 30, 2026","Oct 30, 17:00",4 days,EUR,Baden Wuerttemberg CPI MoM (Oct),HIGH,0.6%,,,MyFXBook
+"Friday, Oct 30, 2026","Oct 30, 17:00",4 days,EUR,Brandenburg CPI MoM (Oct),HIGH,0.3,,,MyFXBook
+"Friday, Oct 30, 2026","Oct 30, 17:00",4 days,EUR,Saxony CPI YoY (Oct),HIGH,3.4,,,MyFXBook
+"Friday, Oct 30, 2026","Oct 30, 17:00",4 days,EUR,Bavaria CPI MoM (Oct),HIGH,0.6%,,,MyFXBook
+"Friday, Oct 30, 2026","Oct 30, 17:00",4 days,EUR,Hesse CPI MoM (Oct),HIGH,0.5%,,,MyFXBook
+"Friday, Oct 30, 2026","Oct 30, 17:00",4 days,EUR,North Rhine Westphalia CPI YoY (Oct),HIGH,3.3,,,MyFXBook
+"Friday, Oct 30, 2026","Oct 30, 17:00",4 days,EUR,Baden Wuerttemberg CPI YoY (Oct),HIGH,2.9,,,MyFXBook
 "Friday, Oct 30, 2026","Oct 30, 17:30",5 days,GBP,DMP 1Y CPI Expectations (Oct),HIGH,3.3%,3.4%,,MyFXBook
 "Friday, Oct 30, 2026","Oct 30, 18:00",5 days,EUR,Retail Sales YoY (Aug),HIGH,5.2%,4.5%,,MyFXBook
 "Friday, Oct 30, 2026","Oct 30, 20:30",5 days,CAD,GDP MoM (Aug),MEDIUM,0%,0.2%,,MyFXBook
