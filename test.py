@@ -92,22 +92,34 @@ def localize_mfx_dataframe(df):
     return pd.DataFrame(updated_rows)
 
 def scrape_myfxbook():
-    """Scrapes economic calendar from MyFXBook silently in headless mode."""
+    """Scrapes economic calendar from MyFXBook silently with a fresh browser instance each time."""
     events = []
     with sync_playwright() as p:
-        print("🌐 Launching headless browser for MyFXBook...")
-        browser = p.chromium.launch(headless=True)
+        print("🌐 Launching fresh headless browser for MyFXBook...")
+        # Add arguments to avoid detection/blocking on repeated requests
+        browser = p.chromium.launch(
+            headless=True,
+            args=[
+                "--disable-blink-features=AutomationControlled",
+                "--no-sandbox",
+                "--disable-dev-shm-usage"
+            ]
+        )
         context = browser.new_context(
-            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
-            viewport={"width": 1920, "height": 1080}
+            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+            viewport={"width": 1920, "height": 1080},
+            java_script_enabled=True
         )
         page = context.new_page()
 
         try:
             print("Navigating to MyFXBook Economic Calendar...")
-            page.goto("https://www.myfxbook.com/forex-economic-calendar", timeout=60000)
-            page.wait_for_selector("table, tr", timeout=30000)
-            time.sleep(7)
+            page.goto("https://www.myfxbook.com/forex-economic-calendar", timeout=60000, wait_until="domcontentloaded")
+            
+            # Give it a bit more time to let dynamic JS build the table rows safely on loop intervals
+            print("Waiting for calendar table to render...")
+            page.wait_for_selector("table", timeout=40000)
+            time.sleep(10) # Safe buffer for full data population
 
             events = page.evaluate("""() => {
                 const rows = document.querySelectorAll('tr');
@@ -133,11 +145,12 @@ def scrape_myfxbook():
                 return parsedData;
             }""")
         except Exception as e:
-            print(f"⚠️ MyFXBook scraping error: {e}")
+            print(f"⚠️ MyFXBook scraping error (possible temporary block/timeout): {e}")
         finally:
             browser.close()
 
     if not events:
+        print("⚠️ MyFXBook returned 0 events on this cycle.")
         return pd.DataFrame()
 
     max_cols = max(len(r) for r in events)
