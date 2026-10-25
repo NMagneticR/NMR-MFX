@@ -281,10 +281,10 @@ def main():
                 os.system('cls' if os.name == 'nt' else 'clear')
                 check_count = 0  # Reset counter
 
-            # Calculate exact wait time until the next 15-minute mark (:00, :15, :30, :45)
+            # Calculate exact wait time until the next 90 minute block
             now = datetime.now(MANILA_TZ)
             current_minute = now.minute
-            next_minute_block = ((current_minute // 15) + 1) * 15
+            next_minute_block = ((current_minute // 90) + 1) * 90
             
             if next_minute_block >= 60:
                 # Roll over to the next hour
