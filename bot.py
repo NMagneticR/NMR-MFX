@@ -716,5 +716,6 @@ async def on_ready():
 
 # Run the bot
 if __name__ == "__main__":
+    import os
     TOKEN = os.getenv("DISCORD_TOKEN")
     bot.run(TOKEN)

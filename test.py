@@ -1,15 +1,11 @@
 import time
 import re
+import subprocess
 from datetime import datetime, timezone
 from zoneinfo import ZoneInfo
-<<<<<<< HEAD
 import requests
 import pandas as pd
 from playwright.sync_api import sync_playwright
-=======
-import pandas as pd
-from curl_cffi import requests as c_requests
->>>>>>> 5d154a56c3c53adc0fbac9fbb3e06a09abef766b
 
 MANILA_TZ = ZoneInfo("Asia/Manila")
 UTC_TZ = ZoneInfo("UTC")
@@ -25,10 +21,7 @@ def filter_economic_calendar(df):
     if df.empty:
         return df
 
-<<<<<<< HEAD
     # Clean and prepare helper columns
-=======
->>>>>>> 5d154a56c3c53adc0fbac9fbb3e06a09abef766b
     df['Event_Lower'] = df['Event Name'].astype(str).str.strip().str.lower()
     df['Impact_Upper'] = df['Impact'].astype(str).str.strip().str.upper()
     df['Currency_Upper'] = df['Currency'].astype(str).str.strip().str.upper()
@@ -43,10 +36,7 @@ def filter_economic_calendar(df):
 
     holiday_keywords = ['holiday', 'national day', 'labor day', 'bank holiday']
 
-<<<<<<< HEAD
     # Conditions
-=======
->>>>>>> 5d154a56c3c53adc0fbac9fbb3e06a09abef766b
     cond_high = (df['Impact_Upper'] == 'HIGH') & (df['Currency_Upper'].isin(major_currencies))
     
     pattern_medium = '|'.join(tier1_medium_keywords)
@@ -55,23 +45,16 @@ def filter_economic_calendar(df):
     pattern_holiday = '|'.join(holiday_keywords)
     cond_holidays = (df['Impact_Upper'] == 'NONE') & df['Event_Lower'].str.contains(pattern_holiday, na=False)
 
-<<<<<<< HEAD
     # Combine precision conditions
     filtered_df = df[cond_high | cond_medium | cond_holidays].copy()
 
     # Drop temporary helper columns
-=======
-    filtered_df = df[cond_high | cond_medium | cond_holidays].copy()
->>>>>>> 5d154a56c3c53adc0fbac9fbb3e06a09abef766b
     filtered_df = filtered_df.drop(columns=['Event_Lower', 'Impact_Upper', 'Currency_Upper'])
     
     return filtered_df
 
 def localize_mfx_dataframe(df):
-<<<<<<< HEAD
     """Converts MyFXBook UTC scraped times to explicit Asia/Manila time strings for the CSV."""
-=======
->>>>>>> 5d154a56c3c53adc0fbac9fbb3e06a09abef766b
     if df.empty:
         return df
     
@@ -102,23 +85,19 @@ def localize_mfx_dataframe(df):
             row['Section Date'] = dt_manila.strftime('%A, %b %d, %Y')
             row['Event Time'] = dt_manila.strftime('%b %d, %H:%M')
         except Exception as e:
-<<<<<<< HEAD
             print(f"⚠️ Localization error for row: {e}")
-=======
-            print(f"Localization error for row: {e}")
->>>>>>> 5d154a56c3c53adc0fbac9fbb3e06a09abef766b
             
         updated_rows.append(row.to_dict())
         
     return pd.DataFrame(updated_rows)
 
 def scrape_myfxbook():
-<<<<<<< HEAD
-    """Scrapes economic calendar from MyFXBook (defaulted to GMT/UTC)."""
+    """Scrapes economic calendar from MyFXBook silently in headless mode."""
     events = []
     with sync_playwright() as p:
-        print("🌐 Launching browser for MyFXBook...")
-        browser = p.chromium.launch(headless=False)
+        print("🌐 Launching headless browser for MyFXBook...")
+        # headless=True prevents any browser window from popping up on your screen
+        browser = p.chromium.launch(headless=True)
         context = browser.new_context(
             user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
             viewport={"width": 1920, "height": 1080}
@@ -173,42 +152,6 @@ def scrape_myfxbook():
     
     df = localize_mfx_dataframe(df)
     return df
-=======
-    """Fetches MyFXBook economic calendar bypassing Cloudflare using curl_cffi."""
-    print("🌐 Fetching MyFXBook calendar data with Cloudflare bypass...")
-    url = "https://www.myfxbook.com/calendar_statement.csv"
-    headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
-        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8",
-        "Accept-Language": "en-US,en;q=0.9",
-        "Referer": "https://www.myfxbook.com/forex-economic-calendar",
-        "Sec-Ch-Ua": '"Chromium";v="122", "Not(A:Brand";v="24", "Google Chrome";v="122"',
-        "Sec-Ch-Ua-Mobile": "?0",
-        "Sec-Ch-Ua-Platform": '"Windows"',
-        "Sec-Fetch-Dest": "document",
-        "Sec-Fetch-Mode": "navigate",
-        "Sec-Fetch-Site": "same-origin",
-        "Sec-Fetch-User": "?1",
-        "Upgrade-Insecure-Requests": "1"
-    }
-    
-    try:
-        response = c_requests.get(url, headers=headers, impersonate="chrome120", timeout=20)
-        
-        if response.status_code == 200 and "Just a moment..." not in response.text:
-            import io
-            df = pd.read_csv(io.StringIO(response.text), dtype=str)
-            df = df.fillna("")
-            df['Source'] = 'MyFXBook'
-            print(f"📊 MyFXBook events fetched successfully: {len(df)}")
-            return localize_mfx_dataframe(df)
-        else:
-            print(f"⚠️ MyFXBook still triggered Cloudflare block or returned invalid status: {response.status_code}")
-    except Exception as e:
-        print(f"⚠️ MyFXBook curl_cffi error: {e}")
-            
-    return pd.DataFrame()
->>>>>>> 5d154a56c3c53adc0fbac9fbb3e06a09abef766b
 
 def fetch_forexfactory_json():
     """Fetches ForexFactory economic calendar via JSON API (UTC) and converts to Manila Time."""
@@ -219,11 +162,7 @@ def fetch_forexfactory_json():
         "Accept": "application/json, text/plain, */*"
     }
     try:
-<<<<<<< HEAD
         response = requests.get(url, headers=headers, timeout=10)
-=======
-        response = c_requests.get(url, headers=headers, impersonate="chrome120", timeout=10)
->>>>>>> 5d154a56c3c53adc0fbac9fbb3e06a09abef766b
         data = response.json()
         
         rows = []
@@ -284,7 +223,6 @@ def fetch_forexfactory_json():
 
 def main():
     output_filename = "myfxbook_calendar.csv"
-<<<<<<< HEAD
     print("🚀 Starting optimized multi-source calendar pipeline...")
     
     df_mfx = scrape_myfxbook()
@@ -302,18 +240,6 @@ def main():
     print(f"📊 Total unique events combined before filtering: {len(combined_df)}")
 
     df_filtered = filter_economic_calendar(combined_df)
-=======
-    print("🚀 Starting optimized calendar pipeline...")
-    
-    # Fetch clean events from ForexFactory API
-    df_ff = fetch_forexfactory_json()
-    
-    if df_ff.empty:
-        print("⚠️ No events fetched from source.")
-        return
-
-    df_filtered = filter_economic_calendar(df_ff)
->>>>>>> 5d154a56c3c53adc0fbac9fbb3e06a09abef766b
 
     print(f"✅ Successfully filtered down to {len(df_filtered)} relevant economic events!")
     if not df_filtered.empty:
@@ -322,9 +248,20 @@ def main():
     df_filtered.to_csv(output_filename, index=False)
     print(f"📁 Clean filtered data successfully saved to {output_filename}")
 
+    # --- AUTOMATED GIT SYNC ---
+    print("🔄 Pushing updated CSV to GitHub repository...")
+    try:
+        subprocess.run(["git", "add", output_filename], check=True)
+        # Check if there are actual changes
+        status = subprocess.run(["git", "diff", "--staged", "--quiet"], capture_output=True)
+        if status.returncode != 0:
+            subprocess.run(["git", "commit", "-m", "Auto-update calendar CSV [skip ci]"], check=True)
+            subprocess.run(["git", "push"], check=True)
+            print("🚀 Successfully committed and pushed to GitHub!")
+        else:
+            print("ℹ️ CSV data is already up to date. No git commit needed.")
+    except Exception as e:
+        print(f"⚠️ Git automation error: {e}")
+
 if __name__ == "__main__":
-<<<<<<< HEAD
     main()
-=======
-    main()
->>>>>>> 5d154a56c3c53adc0fbac9fbb3e06a09abef766b
