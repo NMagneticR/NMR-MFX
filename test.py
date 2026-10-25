@@ -96,7 +96,6 @@ def scrape_myfxbook():
     events = []
     with sync_playwright() as p:
         print("🌐 Launching headless browser for MyFXBook...")
-        # headless=True prevents any browser window from popping up on your screen
         browser = p.chromium.launch(headless=True)
         context = browser.new_context(
             user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
@@ -222,46 +221,54 @@ def fetch_forexfactory_json():
         return pd.DataFrame()
 
 def main():
-    output_filename = "myfxbook_calendar.csv"
-    print("🚀 Starting optimized multi-source calendar pipeline...")
-    
-    df_mfx = scrape_myfxbook()
-    print(f"📊 MyFXBook events scraped: {len(df_mfx)}")
+    while True:
+        try:
+            output_filename = "myfxbook_calendar.csv"
+            print("🚀 Starting optimized multi-source calendar pipeline...")
+            
+            df_mfx = scrape_myfxbook()
+            print(f"📊 MyFXBook events scraped: {len(df_mfx)}")
 
-    df_ff = fetch_forexfactory_json()
+            df_ff = fetch_forexfactory_json()
 
-    combined_df = pd.concat([df_mfx, df_ff], ignore_index=True)
-    
-    if combined_df.empty:
-        print("⚠️ No events fetched from any source.")
-        return
+            combined_df = pd.concat([df_mfx, df_ff], ignore_index=True)
+            
+            if combined_df.empty:
+                print("⚠️ No events fetched from any source. Retrying in 15 minutes...")
+                time.sleep(900)
+                continue
 
-    combined_df = combined_df.drop_duplicates(subset=['Section Date', 'Currency', 'Event Name'], keep='first')
-    print(f"📊 Total unique events combined before filtering: {len(combined_df)}")
+            combined_df = combined_df.drop_duplicates(subset=['Section Date', 'Currency', 'Event Name'], keep='first')
+            print(f"📊 Total unique events combined before filtering: {len(combined_df)}")
 
-    df_filtered = filter_economic_calendar(combined_df)
+            df_filtered = filter_economic_calendar(combined_df)
 
-    print(f"✅ Successfully filtered down to {len(df_filtered)} relevant economic events!")
-    if not df_filtered.empty:
-        print(df_filtered[['Section Date', 'Source', 'Currency', 'Event Name', 'Impact']].head(15).to_string())
+            print(f"✅ Successfully filtered down to {len(df_filtered)} relevant economic events!")
+            if not df_filtered.empty:
+                print(df_filtered[['Section Date', 'Source', 'Currency', 'Event Name', 'Impact']].head(15).to_string())
 
-    df_filtered.to_csv(output_filename, index=False)
-    print(f"📁 Clean filtered data successfully saved to {output_filename}")
+            df_filtered.to_csv(output_filename, index=False)
+            print(f"📁 Clean filtered data successfully saved to {output_filename}")
 
-    # --- AUTOMATED GIT SYNC ---
-    print("🔄 Pushing updated CSV to GitHub repository...")
-    try:
-        subprocess.run(["git", "add", output_filename], check=True)
-        # Check if there are actual changes
-        status = subprocess.run(["git", "diff", "--staged", "--quiet"], capture_output=True)
-        if status.returncode != 0:
-            subprocess.run(["git", "commit", "-m", "Auto-update calendar CSV [skip ci]"], check=True)
-            subprocess.run(["git", "push"], check=True)
-            print("🚀 Successfully committed and pushed to GitHub!")
-        else:
-            print("ℹ️ CSV data is already up to date. No git commit needed.")
-    except Exception as e:
-        print(f"⚠️ Git automation error: {e}")
+            # --- AUTOMATED GIT SYNC ---
+            print("🔄 Pushing updated CSV to GitHub repository...")
+            try:
+                subprocess.run(["git", "add", output_filename], check=True)
+                status = subprocess.run(["git", "diff", "--staged", "--quiet"], capture_output=True)
+                if status.returncode != 0:
+                    subprocess.run(["git", "commit", "-m", "Auto-update calendar CSV [skip ci]"], check=True)
+                    subprocess.run(["git", "push"], check=True)
+                    print("🚀 Successfully committed and pushed to GitHub!")
+                else:
+                    print("ℹ️ CSV data is already up to date. No git commit needed.")
+            except Exception as e:
+                print(f"⚠️ Git automation error: {e}")
+                
+            time.sleep(900)
+            
+        except Exception as e:
+            print(f"⚠️ Critical loop error: {e}")
+            time.sleep(60)
 
 if __name__ == "__main__":
     main()
