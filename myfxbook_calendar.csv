@@ -1,9 +1,9 @@
 Section Date,Event Time,Time Left,Currency,Event Name,Impact,Previous,Consensus,Actual,Source
-"Monday, Oct 26, 2026","Oct 26, 05:10",9h 54min,AUD,RBA Jones Speech,MEDIUM,,,,MyFXBook
-"Monday, Oct 26, 2026","Oct 26, 08:00",12h 44min,EUR,National Day,NONE,,,,MyFXBook
-"Monday, Oct 26, 2026","Oct 26, 08:00",12h 44min,EUR,October Bank Holiday,NONE,,,,MyFXBook
-"Monday, Oct 26, 2026","Oct 26, 08:00",12h 44min,NZD,Labor Day,NONE,,,,MyFXBook
-"Monday, Oct 26, 2026","Oct 26, 17:00",21h 44min,EUR,Ifo Business Climate (Oct),HIGH,89.9,89.8,,MyFXBook
+"Monday, Oct 26, 2026","Oct 26, 05:10",9h 39min,AUD,RBA Jones Speech,MEDIUM,,,,MyFXBook
+"Monday, Oct 26, 2026","Oct 26, 08:00",12h 29min,EUR,National Day,NONE,,,,MyFXBook
+"Monday, Oct 26, 2026","Oct 26, 08:00",12h 29min,EUR,October Bank Holiday,NONE,,,,MyFXBook
+"Monday, Oct 26, 2026","Oct 26, 08:00",12h 29min,NZD,Labor Day,NONE,,,,MyFXBook
+"Monday, Oct 26, 2026","Oct 26, 17:00",21h 29min,EUR,Ifo Business Climate (Oct),HIGH,89.9,89.8,,MyFXBook
 "Monday, Oct 26, 2026","Oct 26, 20:30",1 day,USD,Chicago Fed National Activity Index (Sep),MEDIUM,-0.04,-0.1,,MyFXBook
 "Monday, Oct 26, 2026","Oct 26, 22:30",1 day,USD,Dallas Fed Manufacturing Index (Oct),MEDIUM,9.8,7,,MyFXBook
 "Tuesday, Oct 27, 2026","Oct 27, 16:00",1 day,EUR,Unemployment Rate (Q3),HIGH,9.87%,10.1%,,MyFXBook
