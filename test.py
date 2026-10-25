@@ -283,22 +283,27 @@ def main():
 
             # Calculate exact wait time until the next 90 minute block
             now = datetime.now(MANILA_TZ)
-            current_minute = now.minute
-            next_minute_block = ((current_minute // 90) + 1) * 90
+            total_current_minutes = (now.hour * 60) + now.minute
             
-            if next_minute_block >= 60:
-                # Roll over to the next hour
-                next_run = (now + timedelta(hours=1)).replace(minute=0, second=0, microsecond=0)
+            interval_minutes = 90
+            next_total_minutes = ((total_current_minutes // interval_minutes) + 1) * interval_minutes
+            
+            if next_total_minutes >= 1440:  # 1440 minutes in a full 24-hour day
+                rollover_minutes = next_total_minutes % 1440
+                target_hour = rollover_minutes // 60
+                target_minute = rollover_minutes % 60
+                next_run = (now + timedelta(days=1)).replace(hour=target_hour, minute=target_minute, second=0, microsecond=0)
             else:
-                next_run = now.replace(minute=next_minute_block, second=0, microsecond=0)
+                target_hour = next_total_minutes // 60
+                target_minute = next_total_minutes % 60
+                next_run = now.replace(hour=target_hour, minute=target_minute, second=0, microsecond=0)
                 
             sleep_seconds = (next_run - now).total_seconds()
             if sleep_seconds < 5:  # Safety fallback if it triggers right on the edge
-                sleep_seconds = 15
+                sleep_seconds = 60
                 
-            print(f"\n⏳ Waiting until next scheduled mark ({next_run.strftime('%H:%M:%S')}) — sleeping for {int(sleep_seconds)} seconds...")
+            print(f"\n⏳ Waiting until next 90-min mark ({next_run.strftime('%H:%M:%S')}) — sleeping for {int(sleep_seconds)} seconds...")
             time.sleep(sleep_seconds)
-            
         except Exception as e:
             print(f"⚠️ Critical loop error: {e}")
             time.sleep(60)
