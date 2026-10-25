@@ -1,16 +1,16 @@
 Section Date,Event Time,Time Left,Currency,Event Name,Impact,Previous,Consensus,Actual,Source
-"Monday, Oct 26, 2026","Oct 26, 05:10",8h 54min,AUD,RBA Jones Speech,MEDIUM,,,,MyFXBook
-"Monday, Oct 26, 2026","Oct 26, 08:00",11h 44min,EUR,National Day,NONE,,,,MyFXBook
-"Monday, Oct 26, 2026","Oct 26, 08:00",11h 44min,EUR,October Bank Holiday,NONE,,,,MyFXBook
-"Monday, Oct 26, 2026","Oct 26, 08:00",11h 44min,NZD,Labor Day,NONE,,,,MyFXBook
-"Monday, Oct 26, 2026","Oct 26, 17:00",20h 44min,EUR,Ifo Business Climate (Oct),HIGH,89.9,89.8,,MyFXBook
-"Monday, Oct 26, 2026","Oct 26, 20:30",1 day,USD,Chicago Fed National Activity Index (Sep),MEDIUM,-0.04,-0.1,,MyFXBook
+"Monday, Oct 26, 2026","Oct 26, 05:10",8h 39min,AUD,RBA Jones Speech,MEDIUM,,,,MyFXBook
+"Monday, Oct 26, 2026","Oct 26, 08:00",11h 29min,EUR,National Day,NONE,,,,MyFXBook
+"Monday, Oct 26, 2026","Oct 26, 08:00",11h 29min,EUR,October Bank Holiday,NONE,,,,MyFXBook
+"Monday, Oct 26, 2026","Oct 26, 08:00",11h 29min,NZD,Labor Day,NONE,,,,MyFXBook
+"Monday, Oct 26, 2026","Oct 26, 17:00",20h 29min,EUR,Ifo Business Climate (Oct),HIGH,89.9,89.8,,MyFXBook
+"Monday, Oct 26, 2026","Oct 26, 20:30",23h 59min,USD,Chicago Fed National Activity Index (Sep),MEDIUM,-0.04,-0.1,,MyFXBook
 "Monday, Oct 26, 2026","Oct 26, 22:30",1 day,USD,Dallas Fed Manufacturing Index (Oct),MEDIUM,9.8,7,,MyFXBook
 "Tuesday, Oct 27, 2026","Oct 27, 16:00",1 day,EUR,Unemployment Rate (Q3),HIGH,9.87%,10.1%,,MyFXBook
 "Tuesday, Oct 27, 2026","Oct 27, 20:15",1 day,USD,ADP Employment Change Weekly,HIGH,18.5K,,,MyFXBook
-"Tuesday, Oct 27, 2026","Oct 27, 20:30",2 days,USD,Durable Goods Orders MoM (Sep),HIGH,0%,0.6%,,MyFXBook
-"Tuesday, Oct 27, 2026","Oct 27, 20:30",2 days,USD,Durable Goods Orders Ex Transp MoM (Sep),HIGH,0.3%,0.6%,,MyFXBook
-"Tuesday, Oct 27, 2026","Oct 27, 20:30",2 days,USD,Durable Goods Orders ex Defense MoM (Sep),HIGH,0.1,0,,MyFXBook
+"Tuesday, Oct 27, 2026","Oct 27, 20:30",1 day,USD,Durable Goods Orders MoM (Sep),HIGH,0%,0.6%,,MyFXBook
+"Tuesday, Oct 27, 2026","Oct 27, 20:30",1 day,USD,Durable Goods Orders Ex Transp MoM (Sep),HIGH,0.3%,0.6%,,MyFXBook
+"Tuesday, Oct 27, 2026","Oct 27, 20:30",1 day,USD,Durable Goods Orders ex Defense MoM (Sep),HIGH,0.1,0,,MyFXBook
 "Tuesday, Oct 27, 2026","Oct 27, 22:00",2 days,USD,New Home Sales MoM (Sep),HIGH,6.4%,-3.5%,,MyFXBook
 "Tuesday, Oct 27, 2026","Oct 27, 22:00",2 days,USD,New Home Sales (Sep),HIGH,0.684M,0.66M,,MyFXBook
 "Tuesday, Oct 27, 2026","Oct 27, 23:00",2 days,USD,Atlanta Fed GDPNow (Q3),MEDIUM,3.5%,3.5%,,MyFXBook
@@ -29,8 +29,8 @@ Section Date,Event Time,Time Left,Currency,Event Name,Impact,Previous,Consensus,
 "Wednesday, Oct 28, 2026","Oct 28, 15:00",2 days,EUR,GfK Consumer Confidence (Nov),HIGH,-30.6,-30,,MyFXBook
 "Wednesday, Oct 28, 2026","Oct 28, 19:00",2 days,EUR,Unemployment Benefit Claims (Sep),MEDIUM,-61.3,5,,MyFXBook
 "Wednesday, Oct 28, 2026","Oct 28, 19:00",2 days,USD,MBA 30-Year Mortgage Rate (Oct/23),MEDIUM,7.41,,,MyFXBook
-"Wednesday, Oct 28, 2026","Oct 28, 20:30",3 days,GBP,Autumn Budget 2026,HIGH,,,,MyFXBook
-"Wednesday, Oct 28, 2026","Oct 28, 20:30",3 days,USD,Goods Trade Balance (Sep),HIGH,-$132.1B,-$128.7B,,MyFXBook
+"Wednesday, Oct 28, 2026","Oct 28, 20:30",2 days,GBP,Autumn Budget 2026,HIGH,,,,MyFXBook
+"Wednesday, Oct 28, 2026","Oct 28, 20:30",2 days,USD,Goods Trade Balance (Sep),HIGH,-$132.1B,-$128.7B,,MyFXBook
 "Wednesday, Oct 28, 2026","Oct 28, 21:45",3 days,CAD,BoC Interest Rate Decision,HIGH,2.25%,2.5%,,MyFXBook
 "Wednesday, Oct 28, 2026","Oct 28, 21:45",3 days,CAD,BoC Monetary Policy Report,HIGH,,,,MyFXBook
 "Wednesday, Oct 28, 2026","Oct 28, 22:30",3 days,CAD,BoC Press Conference,MEDIUM,,,,MyFXBook
@@ -40,17 +40,17 @@ Section Date,Event Time,Time Left,Currency,Event Name,Impact,Previous,Consensus,
 "Thursday, Oct 29, 2026","Oct 29, 13:00",3 days,JPY,Consumer Confidence (Oct),HIGH,35.4,35.1,,MyFXBook
 "Thursday, Oct 29, 2026","Oct 29, 17:00",3 days,EUR,Unemployment Rate (Sep),HIGH,6.2%,6.2%,,MyFXBook
 "Thursday, Oct 29, 2026","Oct 29, 17:30",3 days,GBP,BoE Consumer Credit (Sep),MEDIUM,£2.464B,£2.2B,,MyFXBook
-"Thursday, Oct 29, 2026","Oct 29, 20:30",4 days,USD,Jobless Claims 4-week Average (Oct/24),HIGH,197.75K,197K,,MyFXBook
-"Thursday, Oct 29, 2026","Oct 29, 20:30",4 days,USD,Continuing Jobless Claims (Oct/17),HIGH,1728K,1729K,,MyFXBook
-"Thursday, Oct 29, 2026","Oct 29, 20:30",4 days,USD,Initial Jobless Claims (Oct/24),HIGH,194K,196K,,MyFXBook
-"Thursday, Oct 29, 2026","Oct 29, 20:30",4 days,USD,Core PCE Price Index MoM (Sep),HIGH,0.2%,0.3%,,MyFXBook
-"Thursday, Oct 29, 2026","Oct 29, 20:30",4 days,USD,GDP Price Index QoQ (Q3),MEDIUM,6.1%,3.5%,,MyFXBook
-"Thursday, Oct 29, 2026","Oct 29, 20:30",4 days,USD,PCE Price Index YoY (Sep),MEDIUM,3.4%,3.6%,,MyFXBook
-"Thursday, Oct 29, 2026","Oct 29, 20:30",4 days,USD,GDP Growth Rate QoQ (Q3),HIGH,2.2%,3.2%,,MyFXBook
-"Thursday, Oct 29, 2026","Oct 29, 20:30",4 days,USD,Personal Income MoM (Sep),HIGH,0.2%,0.3%,,MyFXBook
-"Thursday, Oct 29, 2026","Oct 29, 20:30",4 days,USD,Personal Spending MoM (Sep),HIGH,0.9%,0.3%,,MyFXBook
-"Thursday, Oct 29, 2026","Oct 29, 20:30",4 days,USD,Core PCE Price Index YoY (Sep),HIGH,3%,3.1%,,MyFXBook
-"Thursday, Oct 29, 2026","Oct 29, 20:30",4 days,USD,PCE Price Index MoM (Sep),MEDIUM,0.3%,0.5%,,MyFXBook
+"Thursday, Oct 29, 2026","Oct 29, 20:30",3 days,USD,Jobless Claims 4-week Average (Oct/24),HIGH,197.75K,197K,,MyFXBook
+"Thursday, Oct 29, 2026","Oct 29, 20:30",3 days,USD,Continuing Jobless Claims (Oct/17),HIGH,1728K,1729K,,MyFXBook
+"Thursday, Oct 29, 2026","Oct 29, 20:30",3 days,USD,Initial Jobless Claims (Oct/24),HIGH,194K,196K,,MyFXBook
+"Thursday, Oct 29, 2026","Oct 29, 20:30",3 days,USD,Core PCE Price Index MoM (Sep),HIGH,0.2%,0.3%,,MyFXBook
+"Thursday, Oct 29, 2026","Oct 29, 20:30",3 days,USD,GDP Price Index QoQ (Q3),MEDIUM,6.1%,3.5%,,MyFXBook
+"Thursday, Oct 29, 2026","Oct 29, 20:30",3 days,USD,PCE Price Index YoY (Sep),MEDIUM,3.4%,3.6%,,MyFXBook
+"Thursday, Oct 29, 2026","Oct 29, 20:30",3 days,USD,GDP Growth Rate QoQ (Q3),HIGH,2.2%,3.2%,,MyFXBook
+"Thursday, Oct 29, 2026","Oct 29, 20:30",3 days,USD,Personal Income MoM (Sep),HIGH,0.2%,0.3%,,MyFXBook
+"Thursday, Oct 29, 2026","Oct 29, 20:30",3 days,USD,Personal Spending MoM (Sep),HIGH,0.9%,0.3%,,MyFXBook
+"Thursday, Oct 29, 2026","Oct 29, 20:30",3 days,USD,Core PCE Price Index YoY (Sep),HIGH,3%,3.1%,,MyFXBook
+"Thursday, Oct 29, 2026","Oct 29, 20:30",3 days,USD,PCE Price Index MoM (Sep),MEDIUM,0.3%,0.5%,,MyFXBook
 "Thursday, Oct 29, 2026","Oct 29, 21:15",4 days,EUR,ECB Interest Rate Decision,HIGH,2.65%,2.65%,,MyFXBook
 "Thursday, Oct 29, 2026","Oct 29, 21:15",4 days,EUR,Deposit Facility Rate,HIGH,2.5%,2.5%,,MyFXBook
 "Thursday, Oct 29, 2026","Oct 29, 21:45",4 days,EUR,ECB Press Conference,HIGH,,,,MyFXBook
@@ -80,11 +80,11 @@ Section Date,Event Time,Time Left,Currency,Event Name,Impact,Previous,Consensus,
 "Friday, Oct 30, 2026","Oct 30, 17:00",4 days,EUR,Baden Wuerttemberg CPI YoY (Oct),HIGH,2.9,,,MyFXBook
 "Friday, Oct 30, 2026","Oct 30, 17:30",4 days,GBP,DMP 1Y CPI Expectations (Oct),HIGH,3.3%,3.4%,,MyFXBook
 "Friday, Oct 30, 2026","Oct 30, 18:00",4 days,EUR,Retail Sales YoY (Aug),HIGH,5.2%,4.5%,,MyFXBook
-"Friday, Oct 30, 2026","Oct 30, 20:30",5 days,CAD,GDP MoM (Aug),MEDIUM,0%,0.2%,,MyFXBook
-"Friday, Oct 30, 2026","Oct 30, 20:30",5 days,CAD,GDP MoM (Sep),MEDIUM,0.1,,,MyFXBook
-"Friday, Oct 30, 2026","Oct 30, 20:30",5 days,USD,Employment Cost - Wages QoQ (Q3),MEDIUM,0.9%,0.8%,,MyFXBook
-"Friday, Oct 30, 2026","Oct 30, 20:30",5 days,USD,Employment Cost Index QoQ (Q3),MEDIUM,0.9%,0.8%,,MyFXBook
-"Friday, Oct 30, 2026","Oct 30, 20:30",5 days,USD,Employment Cost - Benefits QoQ (Q3),MEDIUM,1%,0.7%,,MyFXBook
+"Friday, Oct 30, 2026","Oct 30, 20:30",4 days,CAD,GDP MoM (Aug),MEDIUM,0%,0.2%,,MyFXBook
+"Friday, Oct 30, 2026","Oct 30, 20:30",4 days,CAD,GDP MoM (Sep),MEDIUM,0.1,,,MyFXBook
+"Friday, Oct 30, 2026","Oct 30, 20:30",4 days,USD,Employment Cost - Wages QoQ (Q3),MEDIUM,0.9%,0.8%,,MyFXBook
+"Friday, Oct 30, 2026","Oct 30, 20:30",4 days,USD,Employment Cost Index QoQ (Q3),MEDIUM,0.9%,0.8%,,MyFXBook
+"Friday, Oct 30, 2026","Oct 30, 20:30",4 days,USD,Employment Cost - Benefits QoQ (Q3),MEDIUM,1%,0.7%,,MyFXBook
 "Friday, Oct 30, 2026","Oct 30, 21:45",5 days,USD,Chicago PMI (Oct),MEDIUM,58.8,55.9,,MyFXBook
 "Saturday, Oct 31, 2026","Oct 31, 00:30",5 days,USD,Fed Musalem Speech,MEDIUM,,,,MyFXBook
 "Saturday, Oct 31, 2026","Oct 31, 09:30",5 days,CNY,NBS Non Manufacturing PMI (Oct),HIGH,50.2,50.5,,MyFXBook
