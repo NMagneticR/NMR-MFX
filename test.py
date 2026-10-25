@@ -73,16 +73,21 @@ def localize_mfx_dataframe(df):
     return pd.DataFrame(updated_rows)
 
 def scrape_myfxbook():
-    """Scrapes MyFXBook economic calendar using lightweight requests + BeautifulSoup (no RAM overhead)."""
+    """Scrapes MyFXBook economic calendar with enhanced headers to bypass 403 blocks."""
     events = []
     url = "https://www.myfxbook.com/forex-economic-calendar"
     headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
-        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+        "Accept-Language": "en-US,en;q=0.5",
+        "Referer": "https://www.myfxbook.com/",
+        "DNT": "1",
+        "Connection": "keep-alive",
+        "Upgrade-Insecure-Requests": "1"
     }
     
     try:
-        print("🌐 Fetching MyFXBook calendar via lightweight HTTP request...")
+        print("🌐 Fetching MyFXBook calendar via HTTP request...")
         response = requests.get(url, headers=headers, timeout=15)
         if response.status_code != 200:
             print(f"⚠️ MyFXBook HTTP error status: {response.status_code}")
@@ -128,12 +133,17 @@ def fetch_forexfactory_json():
     url = "https://nfs.faireconomy.media/ff_calendar_thisweek.json"
     headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
-        "Accept": "application/json, text/plain, */*"
+        "Accept": "application/json, text/plain, */*",
+        "Referer": "https://www.forexfactory.com/"
     }
     try:
         response = requests.get(url, headers=headers, timeout=10)
+        # Check if response returned actual text or an HTML block/error page
+        if not response.text.strip().startswith("["):
+            print(f"⚠️ ForexFactory returned non-JSON response: {response.text[:100]}")
+            return pd.DataFrame()
+            
         data = response.json()
-        
         rows = []
         for item in data:
             dt_str = item.get('date', '')
