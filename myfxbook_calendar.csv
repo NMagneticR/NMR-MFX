@@ -1,11 +1,11 @@
 Section Date,Event Time,Time Left,Currency,Event Name,Impact,Previous,Consensus,Actual,Source
-"Monday, Oct 26, 2026","Oct 26, 05:10",4h 24min,AUD,RBA Jones Speech,MEDIUM,,,,MyFXBook
-"Monday, Oct 26, 2026","Oct 26, 08:00",7h 14min,EUR,National Day,NONE,,,,MyFXBook
-"Monday, Oct 26, 2026","Oct 26, 08:00",7h 14min,EUR,October Bank Holiday,NONE,,,,MyFXBook
-"Monday, Oct 26, 2026","Oct 26, 08:00",7h 14min,NZD,Labor Day,NONE,,,,MyFXBook
-"Monday, Oct 26, 2026","Oct 26, 17:00",16h 14min,EUR,Ifo Business Climate (Oct),HIGH,89.9,89.8,,MyFXBook
-"Monday, Oct 26, 2026","Oct 26, 20:30",19h 44min,USD,Chicago Fed National Activity Index (Sep),MEDIUM,-0.04,-0.1,,MyFXBook
-"Monday, Oct 26, 2026","Oct 26, 22:30",21h 44min,USD,Dallas Fed Manufacturing Index (Oct),MEDIUM,9.8,7,,MyFXBook
+"Monday, Oct 26, 2026","Oct 26, 05:10",3h 39min,AUD,RBA Jones Speech,MEDIUM,,,,MyFXBook
+"Monday, Oct 26, 2026","Oct 26, 08:00",6h 29min,EUR,National Day,NONE,,,,MyFXBook
+"Monday, Oct 26, 2026","Oct 26, 08:00",6h 29min,EUR,October Bank Holiday,NONE,,,,MyFXBook
+"Monday, Oct 26, 2026","Oct 26, 08:00",6h 29min,NZD,Labor Day,NONE,,,,MyFXBook
+"Monday, Oct 26, 2026","Oct 26, 17:00",15h 29min,EUR,Ifo Business Climate (Oct),HIGH,89.9,89.8,,MyFXBook
+"Monday, Oct 26, 2026","Oct 26, 20:30",18h 59min,USD,Chicago Fed National Activity Index (Sep),MEDIUM,-0.04,-0.1,,MyFXBook
+"Monday, Oct 26, 2026","Oct 26, 22:30",20h 59min,USD,Dallas Fed Manufacturing Index (Oct),MEDIUM,9.8,7,,MyFXBook
 "Tuesday, Oct 27, 2026","Oct 27, 16:00",1 day,EUR,Unemployment Rate (Q3),HIGH,9.87%,10.1%,,MyFXBook
 "Tuesday, Oct 27, 2026","Oct 27, 20:15",1 day,USD,ADP Employment Change Weekly,HIGH,18.5K,,,MyFXBook
 "Tuesday, Oct 27, 2026","Oct 27, 20:30",1 day,USD,Durable Goods Orders MoM (Sep),HIGH,0%,0.6%,,MyFXBook
@@ -14,7 +14,7 @@ Section Date,Event Time,Time Left,Currency,Event Name,Impact,Previous,Consensus,
 "Tuesday, Oct 27, 2026","Oct 27, 22:00",1 day,USD,New Home Sales MoM (Sep),HIGH,6.4%,-3.5%,,MyFXBook
 "Tuesday, Oct 27, 2026","Oct 27, 22:00",1 day,USD,New Home Sales (Sep),HIGH,0.684M,0.66M,,MyFXBook
 "Tuesday, Oct 27, 2026","Oct 27, 23:00",1 day,USD,Atlanta Fed GDPNow (Q3),MEDIUM,3.5%,3.5%,,MyFXBook
-"Wednesday, Oct 28, 2026","Oct 28, 01:00",2 days,EUR,ECB President Lagarde Speech,MEDIUM,,,,MyFXBook
+"Wednesday, Oct 28, 2026","Oct 28, 01:00",1 day,EUR,ECB President Lagarde Speech,MEDIUM,,,,MyFXBook
 "Wednesday, Oct 28, 2026","Oct 28, 08:15",2 days,AUD,RBA Senate Appearance,MEDIUM,,,,MyFXBook
 "Wednesday, Oct 28, 2026","Oct 28, 08:30",2 days,AUD,CPI (Sep),HIGH,103.5,104.1,,MyFXBook
 "Wednesday, Oct 28, 2026","Oct 28, 08:30",2 days,AUD,Inflation Rate MoM (Sep),MEDIUM,0.4%,0.7%,,MyFXBook
@@ -56,7 +56,7 @@ Section Date,Event Time,Time Left,Currency,Event Name,Impact,Previous,Consensus,
 "Thursday, Oct 29, 2026","Oct 29, 21:15",3 days,EUR,Deposit Facility Rate,HIGH,2.5%,2.5%,,MyFXBook
 "Thursday, Oct 29, 2026","Oct 29, 21:45",3 days,EUR,ECB Press Conference,HIGH,,,,MyFXBook
 "Thursday, Oct 29, 2026","Oct 29, 23:00",3 days,USD,Atlanta Fed GDPNow (Q4),MEDIUM,,,,MyFXBook
-"Friday, Oct 30, 2026","Oct 30, 01:30",4 days,CHF,SNB Tschudin Speech,MEDIUM,,,,MyFXBook
+"Friday, Oct 30, 2026","Oct 30, 01:30",3 days,CHF,SNB Tschudin Speech,MEDIUM,,,,MyFXBook
 "Friday, Oct 30, 2026","Oct 30, 07:30",4 days,JPY,Unemployment Rate (Sep),MEDIUM,2.5%,2.5%,,MyFXBook
 "Friday, Oct 30, 2026","Oct 30, 07:50",4 days,JPY,Retail Sales YoY (Sep),MEDIUM,2.7%,3.3%,,MyFXBook
 "Friday, Oct 30, 2026","Oct 30, 11:00",4 days,JPY,BoJ Interest Rate Decision,HIGH,1.25%,1.25%,,MyFXBook
