@@ -103,7 +103,7 @@ def scrape_myfxbook():
             if len(cols) >= 5:
                 colTexts = [col.get_text(strip=True) for col in cols if col.get_text(strip=True) != ""]
                 if len(colTexts) >= 5:
-                    events.append([currentDate, ...colTexts])
+                    events.append([currentDate] + colTexts)
                     
     except Exception as e:
         print(f"⚠️ MyFXBook parsing error: {e}")
