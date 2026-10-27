@@ -1,29 +1,28 @@
 Section Date,Event Time,Time Left,Currency,Event Name,Impact,Previous,Consensus,Actual,Source
-"Tuesday, Oct 27, 2026","Oct 27, 23:00",29 min,USD,Atlanta Fed GDPNow (Q3),MEDIUM,3.5%,3.5%,,MyFXBook
-"Wednesday, Oct 28, 2026","Oct 28, 01:00",2h 29min,EUR,ECB President Lagarde Speech,MEDIUM,,,,MyFXBook
-"Wednesday, Oct 28, 2026","Oct 28, 08:15",9h 44min,AUD,RBA Senate Appearance,MEDIUM,,,,MyFXBook
-"Wednesday, Oct 28, 2026","Oct 28, 08:30",9h 59min,AUD,CPI (Sep),HIGH,103.5,104.1,,MyFXBook
-"Wednesday, Oct 28, 2026","Oct 28, 08:30",9h 59min,AUD,Inflation Rate MoM (Sep),MEDIUM,0.4%,0.7%,,MyFXBook
-"Wednesday, Oct 28, 2026","Oct 28, 08:30",9h 59min,AUD,Inflation Rate YoY (Sep),MEDIUM,4%,4.2%,,MyFXBook
-"Wednesday, Oct 28, 2026","Oct 28, 08:30",9h 59min,AUD,Quarterly RBA Trimmed Mean CPI QoQ (Q3),HIGH,0.8%,1%,,MyFXBook
-"Wednesday, Oct 28, 2026","Oct 28, 08:30",9h 59min,AUD,Quarterly RBA Trimmed Mean CPI YoY (Q3),HIGH,3.6%,3.6%,,MyFXBook
-"Wednesday, Oct 28, 2026","Oct 28, 08:30",9h 59min,AUD,RBA Trimmed Mean CPI MoM (Sep),HIGH,0.2%,0.3%,,MyFXBook
-"Wednesday, Oct 28, 2026","Oct 28, 08:30",9h 59min,AUD,RBA Trimmed Mean CPI YoY (Sep),HIGH,3.6%,3.6%,,MyFXBook
-"Wednesday, Oct 28, 2026","Oct 28, 08:30",9h 59min,AUD,RBA Weighted Median CPI MoM (Sep),HIGH,0.3%,0.3%,,MyFXBook
-"Wednesday, Oct 28, 2026","Oct 28, 08:30",9h 59min,AUD,RBA Weighted Median CPI YoY (Sep),HIGH,3.6%,3.6%,,MyFXBook
-"Wednesday, Oct 28, 2026","Oct 28, 09:00",10h 29min,NZD,RBNZ Interest Rate Decision,MEDIUM,2.75%,3%,,MyFXBook
-"Wednesday, Oct 28, 2026","Oct 28, 09:00",10h 29min,NZD,RBNZ Rate Statement,MEDIUM,,,,MyFXBook
-"Wednesday, Oct 28, 2026","Oct 28, 10:00",11h 29min,NZD,RBNZ Press Conference,MEDIUM,,,,MyFXBook
-"Wednesday, Oct 28, 2026","Oct 28, 15:00",16h 29min,EUR,GfK Consumer Confidence (Nov),HIGH,-30.6,-30.9,,MyFXBook
-"Wednesday, Oct 28, 2026","Oct 28, 19:00",20h 29min,EUR,Unemployment Benefit Claims (Sep),MEDIUM,-61.3,5,,MyFXBook
-"Wednesday, Oct 28, 2026","Oct 28, 19:00",20h 29min,USD,MBA 30-Year Mortgage Rate (Oct/23),MEDIUM,7.41,,,MyFXBook
-"Wednesday, Oct 28, 2026","Oct 28, 20:30",21h 59min,GBP,Autumn Budget 2026,HIGH,,,,MyFXBook
-"Wednesday, Oct 28, 2026","Oct 28, 20:30",21h 59min,USD,Goods Trade Balance (Sep),HIGH,-$132.1B,-$130B,,MyFXBook
-"Wednesday, Oct 28, 2026","Oct 28, 21:45",23h 14min,CAD,BoC Interest Rate Decision,HIGH,2.25%,2.5%,,MyFXBook
-"Wednesday, Oct 28, 2026","Oct 28, 21:45",23h 14min,CAD,BoC Monetary Policy Report,HIGH,,,,MyFXBook
-"Wednesday, Oct 28, 2026","Oct 28, 21:45",23h 14min,CAD,BoC Rate Statement,MEDIUM,,,,MyFXBook
-"Wednesday, Oct 28, 2026","Oct 28, 22:30",23h 59min,CAD,BoC Press Conference,MEDIUM,,,,MyFXBook
-"Wednesday, Oct 28, 2026","Oct 28, 23:00",1 day,USD,Atlanta Fed GDPNow (Q3),MEDIUM,,,,MyFXBook
+"Wednesday, Oct 28, 2026","Oct 28, 01:00",59 min,EUR,ECB President Lagarde Speech,MEDIUM,,,,MyFXBook
+"Wednesday, Oct 28, 2026","Oct 28, 08:15",8h 14min,AUD,RBA Senate Appearance,MEDIUM,,,,MyFXBook
+"Wednesday, Oct 28, 2026","Oct 28, 08:30",8h 29min,AUD,CPI (Sep),HIGH,103.5,104.1,,MyFXBook
+"Wednesday, Oct 28, 2026","Oct 28, 08:30",8h 29min,AUD,Inflation Rate MoM (Sep),MEDIUM,0.4%,0.7%,,MyFXBook
+"Wednesday, Oct 28, 2026","Oct 28, 08:30",8h 29min,AUD,Inflation Rate YoY (Sep),MEDIUM,4%,4.2%,,MyFXBook
+"Wednesday, Oct 28, 2026","Oct 28, 08:30",8h 29min,AUD,Quarterly RBA Trimmed Mean CPI QoQ (Q3),HIGH,0.8%,1%,,MyFXBook
+"Wednesday, Oct 28, 2026","Oct 28, 08:30",8h 29min,AUD,Quarterly RBA Trimmed Mean CPI YoY (Q3),HIGH,3.6%,3.6%,,MyFXBook
+"Wednesday, Oct 28, 2026","Oct 28, 08:30",8h 29min,AUD,RBA Trimmed Mean CPI MoM (Sep),HIGH,0.2%,0.3%,,MyFXBook
+"Wednesday, Oct 28, 2026","Oct 28, 08:30",8h 29min,AUD,RBA Trimmed Mean CPI YoY (Sep),HIGH,3.6%,3.6%,,MyFXBook
+"Wednesday, Oct 28, 2026","Oct 28, 08:30",8h 29min,AUD,RBA Weighted Median CPI MoM (Sep),HIGH,0.3%,0.3%,,MyFXBook
+"Wednesday, Oct 28, 2026","Oct 28, 08:30",8h 29min,AUD,RBA Weighted Median CPI YoY (Sep),HIGH,3.6%,3.6%,,MyFXBook
+"Wednesday, Oct 28, 2026","Oct 28, 09:00",8h 59min,NZD,RBNZ Interest Rate Decision,MEDIUM,2.75%,3%,,MyFXBook
+"Wednesday, Oct 28, 2026","Oct 28, 09:00",8h 59min,NZD,RBNZ Rate Statement,MEDIUM,,,,MyFXBook
+"Wednesday, Oct 28, 2026","Oct 28, 10:00",9h 59min,NZD,RBNZ Press Conference,MEDIUM,,,,MyFXBook
+"Wednesday, Oct 28, 2026","Oct 28, 15:00",14h 59min,EUR,GfK Consumer Confidence (Nov),HIGH,-30.6,-30.9,,MyFXBook
+"Wednesday, Oct 28, 2026","Oct 28, 19:00",18h 59min,EUR,Unemployment Benefit Claims (Sep),MEDIUM,-61.3,5,,MyFXBook
+"Wednesday, Oct 28, 2026","Oct 28, 19:00",18h 59min,USD,MBA 30-Year Mortgage Rate (Oct/23),MEDIUM,7.41,,,MyFXBook
+"Wednesday, Oct 28, 2026","Oct 28, 20:30",20h 29min,GBP,Autumn Budget 2026,HIGH,,,,MyFXBook
+"Wednesday, Oct 28, 2026","Oct 28, 20:30",20h 29min,USD,Goods Trade Balance (Sep),HIGH,-$132.1B,-$130B,,MyFXBook
+"Wednesday, Oct 28, 2026","Oct 28, 21:45",21h 44min,CAD,BoC Interest Rate Decision,HIGH,2.25%,2.5%,,MyFXBook
+"Wednesday, Oct 28, 2026","Oct 28, 21:45",21h 44min,CAD,BoC Monetary Policy Report,HIGH,,,,MyFXBook
+"Wednesday, Oct 28, 2026","Oct 28, 21:45",21h 44min,CAD,BoC Rate Statement,MEDIUM,,,,MyFXBook
+"Wednesday, Oct 28, 2026","Oct 28, 22:30",22h 29min,CAD,BoC Press Conference,MEDIUM,,,,MyFXBook
+"Wednesday, Oct 28, 2026","Oct 28, 23:00",22h 59min,USD,Atlanta Fed GDPNow (Q3),MEDIUM,3.4%,,,MyFXBook
 "Thursday, Oct 29, 2026","Oct 29, 02:00",1 day,USD,Fed Interest Rate Decision,HIGH,4%,4%,,MyFXBook
 "Thursday, Oct 29, 2026","Oct 29, 02:00",1 day,USD,FOMC Statement,HIGH,,,,MyFXBook
 "Thursday, Oct 29, 2026","Oct 29, 02:30",1 day,USD,Fed Press Conference,HIGH,,,,MyFXBook
@@ -45,7 +44,7 @@ Section Date,Event Time,Time Left,Currency,Event Name,Impact,Previous,Consensus,
 "Thursday, Oct 29, 2026","Oct 29, 21:15",1 day,EUR,Deposit Facility Rate,HIGH,2.5%,2.5%,,MyFXBook
 "Thursday, Oct 29, 2026","Oct 29, 21:15",1 day,EUR,ECB Monetary Policy Statement,MEDIUM,,,,MyFXBook
 "Thursday, Oct 29, 2026","Oct 29, 21:45",1 day,EUR,ECB Press Conference,HIGH,,,,MyFXBook
-"Thursday, Oct 29, 2026","Oct 29, 23:00",2 days,USD,Atlanta Fed GDPNow (Q4),MEDIUM,,,,MyFXBook
+"Thursday, Oct 29, 2026","Oct 29, 23:00",1 day,USD,Atlanta Fed GDPNow (Q4),MEDIUM,,,,MyFXBook
 "Friday, Oct 30, 2026","Oct 30, 01:30",2 days,CHF,SNB Tschudin Speech,MEDIUM,,,,MyFXBook
 "Friday, Oct 30, 2026","Oct 30, 07:30",2 days,JPY,Unemployment Rate (Sep),MEDIUM,2.5%,2.5%,,MyFXBook
 "Friday, Oct 30, 2026","Oct 30, 07:50",2 days,JPY,Retail Sales YoY (Sep),MEDIUM,2.7%,3.3%,,MyFXBook
@@ -87,13 +86,13 @@ Section Date,Event Time,Time Left,Currency,Event Name,Impact,Previous,Consensus,
 "Monday, Nov 02, 2026","Nov 02, 16:30",5 days,CHF,procure.ch Manufacturing PMI (Oct),HIGH,55.3,,,MyFXBook
 "Monday, Nov 02, 2026","Nov 02, 22:00",5 days,USD,ISM Manufacturing PMI (Oct),HIGH,54.5,,,MyFXBook
 "Monday, Nov 02, 2026","Nov 02, 22:00",5 days,USD,ISM Manufacturing Employment (Oct),MEDIUM,52.7,,,MyFXBook
-"Monday, Nov 02, 2026","Nov 02, 23:00",6 days,USD,Atlanta Fed GDPNow (Q4),MEDIUM,,,,MyFXBook
+"Monday, Nov 02, 2026","Nov 02, 23:00",5 days,USD,Atlanta Fed GDPNow (Q4),MEDIUM,,,,MyFXBook
 "Tuesday, Nov 03, 2026","Nov 03, 00:15",6 days,USD,Fed Goolsbee Speech,MEDIUM,,,,MyFXBook
 "Tuesday, Nov 03, 2026","Nov 03, 08:00",6 days,USD,Midterm Elections,HIGH,,,,MyFXBook
 "Tuesday, Nov 03, 2026","Nov 03, 11:30",6 days,AUD,RBA Interest Rate Decision,HIGH,4.6%,4.6%,,MyFXBook
 "Tuesday, Nov 03, 2026","Nov 03, 12:30",6 days,AUD,RBA Press Conference,MEDIUM,,,,MyFXBook
 "Tuesday, Nov 03, 2026","Nov 03, 15:30",6 days,CHF,Inflation Rate YoY (Oct),MEDIUM,1,,,MyFXBook
-"Tuesday, Nov 03, 2026","Nov 03, 23:00",7 days,USD,JOLTs Job Openings (Sep),HIGH,7.079,7,,MyFXBook
+"Tuesday, Nov 03, 2026","Nov 03, 23:00",6 days,USD,JOLTs Job Openings (Sep),HIGH,7.079,7,,MyFXBook
 "Wednesday, Nov 04, 2026","Nov 04, 05:45",7 days,NZD,Employment Change QoQ (Q3),HIGH,0.5,0.3,,MyFXBook
 "Wednesday, Nov 04, 2026","Nov 04, 05:45",7 days,NZD,Unemployment Rate (Q3),HIGH,5.6%,5.5%,,MyFXBook
 "Monday, Oct 26, 2026","Oct 26, 03:00",,NZD,Bank Holiday,NONE,,,,ForexFactory
