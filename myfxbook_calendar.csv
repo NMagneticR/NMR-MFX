@@ -1,13 +1,13 @@
 Section Date,Event Time,Time Left,Currency,Event Name,Impact,Previous,Consensus,Actual,Source
-"Monday, Nov 02, 2026","Nov 02, 23:00",5h 22min,USD,ISM Manufacturing PMI (Oct),HIGH,54.5,54.6,,MyFXBook
-"Monday, Nov 02, 2026","Nov 02, 23:00",5h 22min,USD,ISM Manufacturing Employment (Oct),MEDIUM,52.7,53,,MyFXBook
-"Tuesday, Nov 03, 2026","Nov 03, 00:15",6h 37min,USD,Fed Goolsbee Speech,MEDIUM,,,,MyFXBook
-"Tuesday, Nov 03, 2026","Nov 03, 08:00",14h 22min,USD,Midterm Elections,HIGH,,,,MyFXBook
-"Tuesday, Nov 03, 2026","Nov 03, 11:30",17h 52min,AUD,RBA Interest Rate Decision,HIGH,4.6%,4.85%,,MyFXBook
-"Tuesday, Nov 03, 2026","Nov 03, 11:30",17h 52min,AUD,RBA Monetary Policy Statement,MEDIUM,,,,MyFXBook
-"Tuesday, Nov 03, 2026","Nov 03, 11:30",17h 52min,AUD,RBA Rate Statement,MEDIUM,,,,MyFXBook
-"Tuesday, Nov 03, 2026","Nov 03, 12:30",18h 52min,AUD,RBA Press Conference,MEDIUM,,,,MyFXBook
-"Tuesday, Nov 03, 2026","Nov 03, 15:30",21h 52min,CHF,Inflation Rate YoY (Oct),MEDIUM,1%,1.3%,,MyFXBook
+"Monday, Nov 02, 2026","Nov 02, 23:00",5h 18min,USD,ISM Manufacturing PMI (Oct),HIGH,54.5,54.6,,MyFXBook
+"Monday, Nov 02, 2026","Nov 02, 23:00",5h 18min,USD,ISM Manufacturing Employment (Oct),MEDIUM,52.7,53,,MyFXBook
+"Tuesday, Nov 03, 2026","Nov 03, 00:15",6h 33min,USD,Fed Goolsbee Speech,MEDIUM,,,,MyFXBook
+"Tuesday, Nov 03, 2026","Nov 03, 08:00",14h 18min,USD,Midterm Elections,HIGH,,,,MyFXBook
+"Tuesday, Nov 03, 2026","Nov 03, 11:30",17h 48min,AUD,RBA Interest Rate Decision,HIGH,4.6%,4.85%,,MyFXBook
+"Tuesday, Nov 03, 2026","Nov 03, 11:30",17h 48min,AUD,RBA Monetary Policy Statement,MEDIUM,,,,MyFXBook
+"Tuesday, Nov 03, 2026","Nov 03, 11:30",17h 48min,AUD,RBA Rate Statement,MEDIUM,,,,MyFXBook
+"Tuesday, Nov 03, 2026","Nov 03, 12:30",18h 48min,AUD,RBA Press Conference,MEDIUM,,,,MyFXBook
+"Tuesday, Nov 03, 2026","Nov 03, 15:30",21h 48min,CHF,Inflation Rate YoY (Oct),MEDIUM,1%,1.3%,,MyFXBook
 "Tuesday, Nov 03, 2026","Nov 03, 23:00",1 day,USD,JOLTs Job Openings (Sep),HIGH,7.079M,7.13M,,MyFXBook
 "Wednesday, Nov 04, 2026","Nov 04, 05:45",1 day,NZD,Employment Change QoQ (Q3),HIGH,0.5%,0.4%,,MyFXBook
 "Wednesday, Nov 04, 2026","Nov 04, 05:45",1 day,NZD,Unemployment Rate (Q3),HIGH,5.6%,5.5%,,MyFXBook
