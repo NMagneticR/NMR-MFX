@@ -1,94 +1,76 @@
 Section Date,Event Time,Time Left,Currency,Event Name,Impact,Previous,Consensus,Actual,Source
-"Monday, Nov 09, 2026","Nov 09, 06:30",1 day,AUD,RBA Hunter Speech,MEDIUM,,,,MyFXBook
-"Monday, Nov 09, 2026","Nov 09, 09:30",1 day,CNY,Inflation Rate YoY (Oct),HIGH,0.9%,0.8%,,MyFXBook
-"Monday, Nov 09, 2026","Nov 09, 09:30",1 day,CNY,Inflation Rate MoM (Oct),MEDIUM,0.2%,0.2%,,MyFXBook
-"Monday, Nov 09, 2026","Nov 09, 21:40",2 days,USD,Fed Bowman Speech,MEDIUM,,,,MyFXBook
-"Monday, Nov 09, 2026","Nov 09, 23:00",2 days,USD,Fed Goolsbee Speech,MEDIUM,,,,MyFXBook
-"Tuesday, Nov 10, 2026","Nov 10, 00:00",2 days,USD,Atlanta Fed GDPNow (Q4),MEDIUM,3.4%,,,MyFXBook
-"Tuesday, Nov 10, 2026","Nov 10, 01:15",2 days,USD,Fed Barkin Speech,MEDIUM,,,,MyFXBook
-"Tuesday, Nov 10, 2026","Nov 10, 01:15",2 days,USD,Fed Bowman Speech,MEDIUM,,,,MyFXBook
-"Tuesday, Nov 10, 2026","Nov 10, 01:30",2 days,GBP,BoE Gov Bailey Speech,MEDIUM,,,,MyFXBook
-"Tuesday, Nov 10, 2026","Nov 10, 04:00",2 days,USD,Fed Goolsbee Speech,MEDIUM,,,,MyFXBook
-"Tuesday, Nov 10, 2026","Nov 10, 07:30",2 days,AUD,Westpac Consumer Confidence Change (Nov),HIGH,-4.7%,-2.6%,,MyFXBook
-"Tuesday, Nov 10, 2026","Nov 10, 07:50",2 days,JPY,BoJ Summary of Opinions,MEDIUM,,,,MyFXBook
-"Tuesday, Nov 10, 2026","Nov 10, 08:01",2 days,GBP,BRC Retail Sales Monitor YoY (Oct),HIGH,1%,1.2%,,MyFXBook
-"Tuesday, Nov 10, 2026","Nov 10, 08:30",2 days,AUD,NAB Business Confidence (Oct),HIGH,-13,-14,,MyFXBook
-"Tuesday, Nov 10, 2026","Nov 10, 11:00",2 days,CNY,Imports YoY (Oct),HIGH,31,,,MyFXBook
-"Tuesday, Nov 10, 2026","Nov 10, 11:00",2 days,CNY,Exports YoY (Oct),HIGH,36.3,,,MyFXBook
-"Tuesday, Nov 10, 2026","Nov 10, 11:00",2 days,CNY,Balance of Trade (Oct),HIGH,$133.53B,$126.5B,,MyFXBook
-"Tuesday, Nov 10, 2026","Nov 10, 14:30",2 days,EUR,Unemployment Rate (Q3),MEDIUM,8.3%,8.3%,,MyFXBook
-"Tuesday, Nov 10, 2026","Nov 10, 17:00",3 days,USD,Fed Waller Speech,MEDIUM,,,,MyFXBook
-"Tuesday, Nov 10, 2026","Nov 10, 21:15",3 days,USD,ADP Employment Change Weekly,HIGH,16.75K,,,MyFXBook
-"Tuesday, Nov 10, 2026","Nov 10, 21:30",3 days,USD,Core Inflation Rate YoY (Oct),HIGH,2.6%,2.5%,,MyFXBook
-"Tuesday, Nov 10, 2026","Nov 10, 21:30",3 days,USD,CPI (Oct),HIGH,336.94,337,,MyFXBook
-"Tuesday, Nov 10, 2026","Nov 10, 21:30",3 days,USD,CPI s.a (Oct),HIGH,336.3,337,,MyFXBook
-"Tuesday, Nov 10, 2026","Nov 10, 21:30",3 days,USD,Inflation Rate YoY (Oct),HIGH,3.7%,3.7%,,MyFXBook
-"Tuesday, Nov 10, 2026","Nov 10, 21:30",3 days,USD,Core Inflation Rate MoM (Oct),HIGH,0.3%,0.2%,,MyFXBook
-"Tuesday, Nov 10, 2026","Nov 10, 21:30",3 days,USD,Inflation Rate MoM (Oct),HIGH,0.6%,0.3%,,MyFXBook
-"Tuesday, Nov 10, 2026","Nov 10, 22:35",3 days,USD,Fed Logan Speech,MEDIUM,,,,MyFXBook
-"Wednesday, Nov 11, 2026","Nov 11, 02:30",3 days,USD,Fed Schmid Speech,MEDIUM,,,,MyFXBook
-"Wednesday, Nov 11, 2026","Nov 11, 02:30",3 days,USD,Fed Bowman Speech,MEDIUM,,,,MyFXBook
-"Wednesday, Nov 11, 2026","Nov 11, 04:00",3 days,NZD,RBNZ Financial Stability Report,MEDIUM,,,,MyFXBook
-"Wednesday, Nov 11, 2026","Nov 11, 08:00",3 days,NZD,RBNZ Press Conference,MEDIUM,,,,MyFXBook
-"Wednesday, Nov 11, 2026","Nov 11, 17:45",4 days,EUR,ECB President Lagarde Speech,MEDIUM,,,,MyFXBook
-"Wednesday, Nov 11, 2026","Nov 11, 20:00",4 days,USD,MBA 30-Year Mortgage Rate (Nov/06),MEDIUM,7.3,,,MyFXBook
-"Thursday, Nov 12, 2026","Nov 12, 07:30",4 days,AUD,RBA Baker Speech,MEDIUM,,,,MyFXBook
-"Thursday, Nov 12, 2026","Nov 12, 09:30",4 days,JPY,BOJ Asada Speech,MEDIUM,,,,MyFXBook
-"Thursday, Nov 12, 2026","Nov 12, 15:00",4 days,GBP,GDP Growth Rate YoY (Q3),HIGH,1.4%,1.7%,,MyFXBook
-"Thursday, Nov 12, 2026","Nov 12, 15:00",4 days,GBP,GDP MoM (Sep),HIGH,0.1%,0%,,MyFXBook
-"Thursday, Nov 12, 2026","Nov 12, 15:00",4 days,GBP,Goods Trade Balance (Sep),HIGH,-£18.01B,-£19.2B,,MyFXBook
-"Thursday, Nov 12, 2026","Nov 12, 15:00",4 days,GBP,GDP Growth Rate QoQ (Q3),HIGH,0.5%,0.7%,,MyFXBook
-"Thursday, Nov 12, 2026","Nov 12, 15:00",4 days,GBP,GDP 3-Month Avg (Sep),MEDIUM,0.7,0.4,,MyFXBook
-"Thursday, Nov 12, 2026","Nov 12, 15:00",4 days,GBP,Goods Trade Balance Non-EU (Sep),HIGH,-5.29,-8.8,,MyFXBook
-"Thursday, Nov 12, 2026","Nov 12, 17:00",5 days,EUR,ECB Economic Bulletin,MEDIUM,,,,MyFXBook
-"Thursday, Nov 12, 2026","Nov 12, 21:30",5 days,USD,Jobless Claims 4-week Average (Nov/07),HIGH,194.75K,192.5K,,MyFXBook
-"Thursday, Nov 12, 2026","Nov 12, 21:30",5 days,USD,Continuing Jobless Claims (Oct/31),HIGH,1718K,1722K,,MyFXBook
-"Thursday, Nov 12, 2026","Nov 12, 21:30",5 days,USD,Initial Jobless Claims (Nov/07),HIGH,189K,195K,,MyFXBook
-"Thursday, Nov 12, 2026","Nov 12, 22:00",5 days,USD,Fed Hammack Speech,MEDIUM,,,,MyFXBook
-"Thursday, Nov 12, 2026","Nov 12, 23:00",5 days,USD,Existing Home Sales (Oct),HIGH,3.99M,3.98M,,MyFXBook
-"Thursday, Nov 12, 2026","Nov 12, 23:00",5 days,USD,Existing Home Sales MoM (Oct),HIGH,1.5%,0.3%,,MyFXBook
-"Thursday, Nov 12, 2026","Nov 12, 23:00",5 days,USD,Fed Barr Speech,MEDIUM,,,,MyFXBook
-"Friday, Nov 13, 2026","Nov 13, 00:30",5 days,USD,Fed Goolsbee Speech,MEDIUM,,,,MyFXBook
-"Friday, Nov 13, 2026","Nov 13, 02:10",5 days,USD,Fed Daly Speech,MEDIUM,,,,MyFXBook
-"Friday, Nov 13, 2026","Nov 13, 03:00",5 days,USD,Monthly Budget Statement (Oct),MEDIUM,-$27B,-$298B,,MyFXBook
-"Friday, Nov 13, 2026","Nov 13, 03:30",5 days,EUR,ECB President Lagarde Speech,MEDIUM,,,,MyFXBook
-"Friday, Nov 13, 2026","Nov 13, 05:30",5 days,NZD,Business NZ PMI (Oct),MEDIUM,56.5,55.8,,MyFXBook
-"Friday, Nov 13, 2026","Nov 13, 07:30",5 days,USD,Fed Williams Speech,MEDIUM,,,,MyFXBook
-"Friday, Nov 13, 2026","Nov 13, 18:00",6 days,EUR,Employment Change QoQ (Q3),HIGH,0.1%,0.2%,,MyFXBook
-"Friday, Nov 13, 2026","Nov 13, 18:00",6 days,EUR,Employment Change YoY (Q3),HIGH,0.5%,0.3%,,MyFXBook
-"Friday, Nov 13, 2026","Nov 13, 21:30",6 days,USD,PPI MoM (Oct),HIGH,1.3%,0.4%,,MyFXBook
-"Friday, Nov 13, 2026","Nov 13, 23:50",6 days,USD,Fed Bowman Speech,MEDIUM,,,,MyFXBook
-"Saturday, Nov 14, 2026","Nov 14, 01:00",6 days,USD,Fed Daly Speech,MEDIUM,,,,MyFXBook
-"Saturday, Nov 14, 2026","Nov 14, 08:00",6 days,USD,Fed Jefferson Speech,MEDIUM,,,,MyFXBook
-"Monday, Nov 02, 2026","Nov 02, 23:00",,USD,ISM Manufacturing PMI,MEDIUM,54.5,54.5,,ForexFactory
-"Tuesday, Nov 03, 2026","Nov 03, 08:00",,JPY,Bank Holiday,NONE,,,,ForexFactory
-"Tuesday, Nov 03, 2026","Nov 03, 11:30",,AUD,Cash Rate,HIGH,4.60%,4.85%,,ForexFactory
-"Tuesday, Nov 03, 2026","Nov 03, 11:30",,AUD,RBA Monetary Policy Statement,HIGH,,,,ForexFactory
-"Tuesday, Nov 03, 2026","Nov 03, 11:30",,AUD,RBA Rate Statement,HIGH,,,,ForexFactory
-"Tuesday, Nov 03, 2026","Nov 03, 12:30",,AUD,RBA Press Conference,HIGH,,,,ForexFactory
-"Tuesday, Nov 03, 2026","Nov 03, 15:30",,CHF,CPI m/m,MEDIUM,0.0%,0.0%,,ForexFactory
-"Tuesday, Nov 03, 2026","Nov 03, 23:16",,USD,Congressional Elections,HIGH,,,,ForexFactory
-"Wednesday, Nov 04, 2026","Nov 04, 00:00",,CAD,BOC Gov Macklem Speaks,MEDIUM,,,,ForexFactory
-"Wednesday, Nov 04, 2026","Nov 04, 05:45",,NZD,Employment Change q/q,HIGH,0.5%,0.4%,,ForexFactory
-"Wednesday, Nov 04, 2026","Nov 04, 05:45",,NZD,Unemployment Rate,HIGH,5.6%,5.5%,,ForexFactory
-"Wednesday, Nov 04, 2026","Nov 04, 18:00",,EUR,Core CPI Flash Estimate y/y,MEDIUM,2.5%,2.5%,,ForexFactory
-"Wednesday, Nov 04, 2026","Nov 04, 18:00",,EUR,CPI Flash Estimate y/y,MEDIUM,3.8%,4.0%,,ForexFactory
-"Wednesday, Nov 04, 2026","Nov 04, 23:00",,USD,ISM Services PMI,MEDIUM,54.9,54.8,,ForexFactory
-"Thursday, Nov 05, 2026","Nov 05, 20:00",,GBP,BOE Monetary Policy Report,HIGH,,,,ForexFactory
-"Thursday, Nov 05, 2026","Nov 05, 20:00",,GBP,Monetary Policy Summary,HIGH,,,,ForexFactory
-"Thursday, Nov 05, 2026","Nov 05, 20:00",,GBP,MPC Official Bank Rate Votes,HIGH,3-0-6,7-0-2,,ForexFactory
-"Thursday, Nov 05, 2026","Nov 05, 20:00",,GBP,Official Bank Rate,HIGH,3.75%,4.00%,,ForexFactory
-"Thursday, Nov 05, 2026","Nov 05, 20:30",,GBP,BOE Gov Bailey Speaks,HIGH,,,,ForexFactory
-"Thursday, Nov 05, 2026","Nov 05, 20:40",,CHF,SNB Chairman Schlegel Speaks,MEDIUM,,,,ForexFactory
-"Thursday, Nov 05, 2026","Nov 05, 21:30",,USD,Unemployment Claims,MEDIUM,194K,197K,,ForexFactory
-"Thursday, Nov 05, 2026","Nov 05, 23:30",,CAD,BOC Gov Macklem Speaks,MEDIUM,,,,ForexFactory
-"Friday, Nov 06, 2026","Nov 06, 02:00",,EUR,ECB President Lagarde Speaks,MEDIUM,,,,ForexFactory
-"Friday, Nov 06, 2026","Nov 06, 21:30",,CAD,Employment Change,HIGH,-68.3K,14.6K,,ForexFactory
-"Friday, Nov 06, 2026","Nov 06, 21:30",,CAD,Unemployment Rate,HIGH,6.5%,6.5%,,ForexFactory
-"Friday, Nov 06, 2026","Nov 06, 21:30",,USD,Average Hourly Earnings m/m,HIGH,0.1%,0.3%,,ForexFactory
-"Friday, Nov 06, 2026","Nov 06, 21:30",,USD,Non-Farm Employment Change,HIGH,29K,65K,,ForexFactory
-"Friday, Nov 06, 2026","Nov 06, 21:30",,USD,Unemployment Rate,HIGH,4.2%,4.2%,,ForexFactory
-"Friday, Nov 06, 2026","Nov 06, 23:00",,CAD,Ivey PMI,MEDIUM,58.2,57.7,,ForexFactory
-"Friday, Nov 06, 2026","Nov 06, 23:00",,USD,Prelim UoM Inflation Expectations,MEDIUM,4.7%,,,ForexFactory
-"Saturday, Nov 07, 2026","Nov 07, 00:00",,JPY,BOJ Gov Ueda Speaks,HIGH,,,,ForexFactory
-"Saturday, Nov 07, 2026","Nov 07, 05:45",,NZD,Parliamentary Elections,HIGH,,,,ForexFactory
+"Monday, Nov 09, 2026","Nov 09, 06:30",10h 52min,AUD,RBA Hunter Speech,MEDIUM,,,,MyFXBook
+"Monday, Nov 09, 2026","Nov 09, 09:30",13h 52min,CNY,Inflation Rate YoY (Oct),HIGH,0.9%,0.8%,,MyFXBook
+"Monday, Nov 09, 2026","Nov 09, 09:30",13h 52min,CNY,Inflation Rate MoM (Oct),MEDIUM,0.2%,0.2%,,MyFXBook
+"Monday, Nov 09, 2026","Nov 09, 21:40",1 day,USD,Fed Bowman Speech,MEDIUM,,,,MyFXBook
+"Monday, Nov 09, 2026","Nov 09, 23:00",1 day,USD,Fed Goolsbee Speech,MEDIUM,,,,MyFXBook
+"Tuesday, Nov 10, 2026","Nov 10, 00:00",1 day,USD,Atlanta Fed GDPNow (Q4),MEDIUM,3.4%,,,MyFXBook
+"Tuesday, Nov 10, 2026","Nov 10, 01:15",1 day,USD,Fed Barkin Speech,MEDIUM,,,,MyFXBook
+"Tuesday, Nov 10, 2026","Nov 10, 01:15",1 day,USD,Fed Bowman Speech,MEDIUM,,,,MyFXBook
+"Tuesday, Nov 10, 2026","Nov 10, 01:30",1 day,GBP,BoE Gov Bailey Speech,MEDIUM,,,,MyFXBook
+"Tuesday, Nov 10, 2026","Nov 10, 04:00",1 day,USD,Fed Goolsbee Speech,MEDIUM,,,,MyFXBook
+"Tuesday, Nov 10, 2026","Nov 10, 07:30",1 day,AUD,Westpac Consumer Confidence Change (Nov),HIGH,-4.7%,-2.6%,,MyFXBook
+"Tuesday, Nov 10, 2026","Nov 10, 07:50",1 day,JPY,BoJ Summary of Opinions,MEDIUM,,,,MyFXBook
+"Tuesday, Nov 10, 2026","Nov 10, 08:01",1 day,GBP,BRC Retail Sales Monitor YoY (Oct),HIGH,1%,1.2%,,MyFXBook
+"Tuesday, Nov 10, 2026","Nov 10, 08:30",1 day,AUD,NAB Business Confidence (Oct),HIGH,-13,-14,,MyFXBook
+"Tuesday, Nov 10, 2026","Nov 10, 11:00",1 day,CNY,Imports YoY (Oct),HIGH,31,,,MyFXBook
+"Tuesday, Nov 10, 2026","Nov 10, 11:00",1 day,CNY,Exports YoY (Oct),HIGH,36.3,,,MyFXBook
+"Tuesday, Nov 10, 2026","Nov 10, 11:00",1 day,CNY,Balance of Trade (Oct),HIGH,$133.53B,$126.5B,,MyFXBook
+"Tuesday, Nov 10, 2026","Nov 10, 14:30",1 day,EUR,Unemployment Rate (Q3),MEDIUM,8.3%,8.3%,,MyFXBook
+"Tuesday, Nov 10, 2026","Nov 10, 17:00",1 day,USD,Fed Waller Speech,MEDIUM,,,,MyFXBook
+"Tuesday, Nov 10, 2026","Nov 10, 21:15",2 days,USD,ADP Employment Change Weekly,HIGH,16.75K,,,MyFXBook
+"Tuesday, Nov 10, 2026","Nov 10, 21:30",2 days,USD,Core Inflation Rate YoY (Oct),HIGH,2.6%,2.5%,,MyFXBook
+"Tuesday, Nov 10, 2026","Nov 10, 21:30",2 days,USD,CPI (Oct),HIGH,336.94,337,,MyFXBook
+"Tuesday, Nov 10, 2026","Nov 10, 21:30",2 days,USD,CPI s.a (Oct),HIGH,336.3,337,,MyFXBook
+"Tuesday, Nov 10, 2026","Nov 10, 21:30",2 days,USD,Inflation Rate YoY (Oct),HIGH,3.7%,3.7%,,MyFXBook
+"Tuesday, Nov 10, 2026","Nov 10, 21:30",2 days,USD,Core Inflation Rate MoM (Oct),HIGH,0.3%,0.2%,,MyFXBook
+"Tuesday, Nov 10, 2026","Nov 10, 21:30",2 days,USD,Inflation Rate MoM (Oct),HIGH,0.6%,0.3%,,MyFXBook
+"Tuesday, Nov 10, 2026","Nov 10, 22:35",2 days,USD,Fed Logan Speech,MEDIUM,,,,MyFXBook
+"Wednesday, Nov 11, 2026","Nov 11, 02:30",2 days,USD,Fed Schmid Speech,MEDIUM,,,,MyFXBook
+"Wednesday, Nov 11, 2026","Nov 11, 02:30",2 days,USD,Fed Bowman Speech,MEDIUM,,,,MyFXBook
+"Wednesday, Nov 11, 2026","Nov 11, 04:00",2 days,NZD,RBNZ Financial Stability Report,MEDIUM,,,,MyFXBook
+"Wednesday, Nov 11, 2026","Nov 11, 08:00",2 days,NZD,RBNZ Press Conference,MEDIUM,,,,MyFXBook
+"Wednesday, Nov 11, 2026","Nov 11, 17:45",2 days,EUR,ECB President Lagarde Speech,MEDIUM,,,,MyFXBook
+"Wednesday, Nov 11, 2026","Nov 11, 20:00",3 days,USD,MBA 30-Year Mortgage Rate (Nov/06),MEDIUM,7.3,,,MyFXBook
+"Thursday, Nov 12, 2026","Nov 12, 07:30",3 days,AUD,RBA Baker Speech,MEDIUM,,,,MyFXBook
+"Thursday, Nov 12, 2026","Nov 12, 09:30",3 days,JPY,BOJ Asada Speech,MEDIUM,,,,MyFXBook
+"Thursday, Nov 12, 2026","Nov 12, 15:00",3 days,GBP,GDP Growth Rate YoY (Q3),HIGH,1.4%,1.7%,,MyFXBook
+"Thursday, Nov 12, 2026","Nov 12, 15:00",3 days,GBP,GDP MoM (Sep),HIGH,0.1%,0%,,MyFXBook
+"Thursday, Nov 12, 2026","Nov 12, 15:00",3 days,GBP,Goods Trade Balance (Sep),HIGH,-£18.01B,-£19.2B,,MyFXBook
+"Thursday, Nov 12, 2026","Nov 12, 15:00",3 days,GBP,GDP Growth Rate QoQ (Q3),HIGH,0.5%,0.7%,,MyFXBook
+"Thursday, Nov 12, 2026","Nov 12, 15:00",3 days,GBP,GDP 3-Month Avg (Sep),MEDIUM,0.7,0.4,,MyFXBook
+"Thursday, Nov 12, 2026","Nov 12, 15:00",3 days,GBP,Goods Trade Balance Non-EU (Sep),HIGH,-5.29,-8.8,,MyFXBook
+"Thursday, Nov 12, 2026","Nov 12, 17:00",3 days,EUR,ECB Economic Bulletin,MEDIUM,,,,MyFXBook
+"Thursday, Nov 12, 2026","Nov 12, 21:30",4 days,USD,Jobless Claims 4-week Average (Nov/07),HIGH,194.75K,192.5K,,MyFXBook
+"Thursday, Nov 12, 2026","Nov 12, 21:30",4 days,USD,Continuing Jobless Claims (Oct/31),HIGH,1718K,1722K,,MyFXBook
+"Thursday, Nov 12, 2026","Nov 12, 21:30",4 days,USD,Initial Jobless Claims (Nov/07),HIGH,189K,195K,,MyFXBook
+"Thursday, Nov 12, 2026","Nov 12, 22:00",4 days,USD,Fed Hammack Speech,MEDIUM,,,,MyFXBook
+"Thursday, Nov 12, 2026","Nov 12, 23:00",4 days,USD,Existing Home Sales (Oct),HIGH,3.99M,3.98M,,MyFXBook
+"Thursday, Nov 12, 2026","Nov 12, 23:00",4 days,USD,Existing Home Sales MoM (Oct),HIGH,1.5%,0.3%,,MyFXBook
+"Thursday, Nov 12, 2026","Nov 12, 23:00",4 days,USD,Fed Barr Speech,MEDIUM,,,,MyFXBook
+"Friday, Nov 13, 2026","Nov 13, 00:30",4 days,USD,Fed Goolsbee Speech,MEDIUM,,,,MyFXBook
+"Friday, Nov 13, 2026","Nov 13, 02:10",4 days,USD,Fed Daly Speech,MEDIUM,,,,MyFXBook
+"Friday, Nov 13, 2026","Nov 13, 03:00",4 days,USD,Monthly Budget Statement (Oct),MEDIUM,-$27B,-$298B,,MyFXBook
+"Friday, Nov 13, 2026","Nov 13, 03:30",4 days,EUR,ECB President Lagarde Speech,MEDIUM,,,,MyFXBook
+"Friday, Nov 13, 2026","Nov 13, 05:30",4 days,NZD,Business NZ PMI (Oct),MEDIUM,56.5,55.8,,MyFXBook
+"Friday, Nov 13, 2026","Nov 13, 07:30",4 days,USD,Fed Williams Speech,MEDIUM,,,,MyFXBook
+"Friday, Nov 13, 2026","Nov 13, 18:00",4 days,EUR,Employment Change QoQ (Q3),HIGH,0.1%,0.2%,,MyFXBook
+"Friday, Nov 13, 2026","Nov 13, 18:00",4 days,EUR,Employment Change YoY (Q3),HIGH,0.5%,0.3%,,MyFXBook
+"Friday, Nov 13, 2026","Nov 13, 21:30",5 days,USD,PPI MoM (Oct),HIGH,1.3%,0.4%,,MyFXBook
+"Friday, Nov 13, 2026","Nov 13, 23:50",5 days,USD,Fed Bowman Speech,MEDIUM,,,,MyFXBook
+"Saturday, Nov 14, 2026","Nov 14, 01:00",5 days,USD,Fed Daly Speech,MEDIUM,,,,MyFXBook
+"Saturday, Nov 14, 2026","Nov 14, 08:00",5 days,USD,Fed Jefferson Speech,MEDIUM,,,,MyFXBook
+"Monday, Nov 16, 2026","Nov 16, 07:50",7 days,JPY,GDP Growth Rate QoQ (Q3),HIGH,0.4%,0.1%,,MyFXBook
+"Monday, Nov 16, 2026","Nov 16, 07:50",7 days,JPY,GDP Growth Annualized (Q3),MEDIUM,1.4%,0.3%,,MyFXBook
+"Tuesday, Nov 10, 2026","Nov 10, 01:25",,GBP,BOE Gov Bailey Speaks,MEDIUM,,,,ForexFactory
+"Tuesday, Nov 10, 2026","Nov 10, 21:30",,USD,Core CPI m/m,HIGH,0.3%,0.2%,,ForexFactory
+"Tuesday, Nov 10, 2026","Nov 10, 21:30",,USD,CPI m/m,HIGH,0.6%,0.3%,,ForexFactory
+"Wednesday, Nov 11, 2026","Nov 11, 15:01",,EUR,French Bank Holiday,NONE,,,,ForexFactory
+"Wednesday, Nov 11, 2026","Nov 11, 21:00",,CAD,Bank Holiday,NONE,,,,ForexFactory
+"Wednesday, Nov 11, 2026","Nov 11, 21:00",,USD,Bank Holiday,NONE,,,,ForexFactory
+"Thursday, Nov 12, 2026","Nov 12, 15:00",,GBP,GDP m/m,HIGH,0.1%,0.0%,,ForexFactory
+"Thursday, Nov 12, 2026","Nov 12, 15:00",,GBP,Prelim GDP q/q,MEDIUM,0.5%,0.7%,,ForexFactory
+"Thursday, Nov 12, 2026","Nov 12, 21:30",,USD,Unemployment Claims,MEDIUM,189K,194K,,ForexFactory
+"Friday, Nov 13, 2026","Nov 13, 03:30",,EUR,ECB President Lagarde Speaks,MEDIUM,,,,ForexFactory
+"Friday, Nov 13, 2026","Nov 13, 21:30",,USD,Core PPI m/m,HIGH,0.7%,0.3%,,ForexFactory
+"Friday, Nov 13, 2026","Nov 13, 21:30",,USD,PPI m/m,HIGH,1.3%,0.4%,,ForexFactory
